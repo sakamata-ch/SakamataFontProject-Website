@@ -6,6 +6,7 @@ import SupportTable from '../components/SupportTable';
 import React from 'react';
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import '../styles/vanilla.scss';
+import '../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 
@@ -52,12 +53,23 @@ export default function Home() {
             <p>{chars.length} <Trans>characters supported now.</Trans></p>
           </div>
         </div>
-      </section>
+      </section >
 
       <Strip type="light">
-        <ul>
+        <ul className="p-matrix">
           {chars.map(i =>
-            <li key={i}>{i}: <i className="font-sakamata-apply">{i}</i> (U+{i.charCodeAt(0).toString(16)})</li>
+            <>
+              <li className="p-matrix__item" key={i} id={'U+' + (i.charCodeAt(0).toString(16))}>
+                <div className="p-matrix__img">
+                  <div>
+                    <span className="font-sakamata-apply char-list-preview">{i}</span>
+                  </div>
+                </div>
+                <div className="p-matrix__content">
+                  <h3 className="p-matrix__title">{i}: U+{i.charCodeAt(0).toString(16)}</h3>
+                </div>
+              </li>
+            </>
           )}
         </ul>
       </Strip>
