@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Sakamata Font Project`,
     siteUrl: `https://font.sakamata.ch`,
-    image: '/favicon.svg',
+    image: '/icon.png',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -18,7 +18,7 @@ const config: GatsbyConfig = {
   }, */ "gatsby-plugin-sitemap", "gatsby-plugin-sass", 'gatsby-plugin-pnpm', `gatsby-plugin-react-helmet`, {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.svg"
+        "icon": "src/images/icon.png"
       }
     },
     {
@@ -47,6 +47,19 @@ const config: GatsbyConfig = {
           nsSeparator: false
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-clarity`,
+      options: {
+        // String value for your clarity project id
+        // Project id is found in your clarity dashboard url
+        // https://clarity.microsoft.com/projects/view/{clarity_project_id}/
+        clarity_project_id: 'eten4je243',
+        // Boolean value for enabling clarity while developing
+        // true will enable clarity tracking code on both development and production environments
+        // false will enable clarity tracking code on production environment only
+        enable_on_dev_env: true
+      },
     }
   ]
 };
