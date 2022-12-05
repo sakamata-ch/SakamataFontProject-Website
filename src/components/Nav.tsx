@@ -45,10 +45,23 @@ export default function Nav(): JSX.Element {
                 url: 'https://github.com/sakamata-ch/SakamataFontProject/releases'
               }
             ]
+          },
+          {
+            label: 'Languages',
+            items: [
+              {
+                label: '日本語',
+                url: '/ja'
+              },
+              {
+                label: 'English',
+                url: '/en'
+              }
+            ]
           }
         ]}
         logo={{
-          src: "/icons/icon-48x48.png",
+          src: "/あ.svg",
           title: t('Sakamata Font Project'),
           url: `/${language}/`
         }}
