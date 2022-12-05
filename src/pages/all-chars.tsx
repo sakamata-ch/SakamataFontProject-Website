@@ -60,7 +60,7 @@ export default function Home() {
           {chars.map(i =>
             <>
               <li className="p-matrix__item" key={i} id={'U+' + (i.charCodeAt(0).toString(16))}>
-                <div className="p-matrix__img">
+                <div className="p-matrix__img char-list-preview-holder">
                   <div>
                     <span className="font-sakamata-apply char-list-preview">{i}</span>
                   </div>
