@@ -14,7 +14,7 @@ export default function Home() {
   const { t } = useTranslation();
   const { language, siteUrl } = useI18next();
 
-  const [textInput, setTextInput] = useState<string>(t('Sakamata Chloe'));
+  const [textInput, setTextInput] = useState<string>('BIG学業ぽえぽえ');
 
   return (
     <div>
@@ -59,7 +59,7 @@ export default function Home() {
 
       <Footer />
 
-    </div >
+    </div>
   )
 }
 
