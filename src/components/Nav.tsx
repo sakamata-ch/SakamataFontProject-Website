@@ -26,10 +26,6 @@ export default function Nav(): JSX.Element {
               {
                 label: t('All Characters'),
                 url: `/${language}/all-chars`
-              },
-              {
-                label: <><i class="bi bi-download"></i> <Trans>Source Contents</Trans> (TSV)</>,
-                url: `/sakamata-font-0-nostrict.sources.tsv`
               }
             ]
           },
@@ -37,12 +33,25 @@ export default function Nav(): JSX.Element {
             label: t('Downloads'),
             items: [
               {
-                label: <><i className="bi bi-box-arrow-up-right"></i> <Trans>Release</Trans></>,
-                url: 'https://github.com/sakamata-ch/SakamataFontProject/releases/latest'
+                label: t('Standard Font'),
+                url: 'https://github.com/sakamata-ch/SakamataFontProject/releases'
               },
               {
-                label: <><i className="bi bi-box-arrow-up-right"></i> <Trans>Nightly</Trans></>,
-                url: 'https://github.com/sakamata-ch/SakamataFontProject/releases'
+                label: t('Japanese Traditional Calligraphy'),
+                url: 'https://github.com/sakamata-ch/SakamataTraditionalCalligraphyFont/releases'
+              }
+            ]
+          },
+          {
+            label: t('Styles'),
+            items: [
+              {
+                label: t('Standard Font'),
+                url: `/${language}/`
+              },
+              {
+                label: t('Japanese Traditional Calligraphy'),
+                url: `/${language}/jtc`
               }
             ]
           },
