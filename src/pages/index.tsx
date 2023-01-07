@@ -48,6 +48,7 @@ export default function Home() {
             <h2><Trans>Try it</Trans></h2>
             <p>
               <Trans>Try font now to check out Sakamata's cute hand write Characters.</Trans>
+              <Link to="/tips"><Trans>Check tips for using font</Trans></Link>
             </p>
             <input type="text" onChange={event => setTextInput(event.target.value)} defaultValue={textInput} />
             <div className="font-sakamata">
