@@ -113,7 +113,7 @@ export default function Home() {
             <h2>不足文字をひらがなで表現する</h2>
             <p>
               沙花叉フォントには存在しない文字が多く存在します。
-              我々はこの問題を「<span className="font-jtc-sakamata">BIG学業ぽえぽえ</span>問題」と読んでいますが、
+              我々はこの問題を「<span className="font-jtc-sakamata-apply">BIG学業ぽえぽえ</span>問題」と読んでいますが、
               下記の方法で応急処置的に解決することができます。
             </p>
             <p>
