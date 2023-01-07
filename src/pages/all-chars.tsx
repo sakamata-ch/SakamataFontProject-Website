@@ -16,7 +16,7 @@ export default function Home() {
   const [chars, setChars] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch('https://font-assets.sakamata.ch/char.tsv').then(res => res.text()).then(data => {
+    fetch('https://1374ad54-0d58-42c3-aaa9-ef523652e19e.contentdelivernet.com/2500693d-f372-49ea-ba84-4bc2bdccf854/std/sakamata-font-char.tsv').then(res => res.text()).then(data => {
       let chars: string[] = [];
 
       String(data).split('\n').forEach(function (l: string) {
