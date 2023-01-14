@@ -38,6 +38,9 @@ export default function Home() {
             <h1><Trans>Sakamata Font Project</Trans></h1>
             <p><Trans>Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.</Trans></p>
             <p><Trans>In personal purpose, you can use anywhere that accept custom ttf.</Trans></p>
+            <Link to="/index-sf" role="button" className="p-button--positive">
+              <Trans>Check example</Trans>
+            </Link>
           </div>
         </div>
       </section>
