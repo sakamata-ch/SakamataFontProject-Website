@@ -78,8 +78,8 @@ export default function Home() {
         <meta property="twitter:title" content={t('Hiragana, Katakana Supported List') + ' - ' + t('Sakamata Font Project')} />
         <meta property="og:title" content={t('Hiragana, Katakana Supported List') + ' - ' + t('Sakamata Font Project')} />
         <html lang={language}></html>
-        <meta property='twitter:description' content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
-        <meta name="description" content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
+        <meta property='twitter:description' content={t("Sakamata Font Hiragana and Katakana support information")} />
+        <meta name="description" content={t("Sakamata Font Hiragana and Katakana support information")} />
         <meta property="og:image" content="/favicon.svg" />
         <meta property="twitter:image" content="/favicon.svg" />
         <meta name="twitter:card" content="summary" />

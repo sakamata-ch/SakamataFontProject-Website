@@ -35,8 +35,8 @@ export default function Home() {
         <meta property="twitter:title" content={t('Supported Characters') + ' - ' + t('Sakamata Font Project')} />
         <meta property="og:title" content={t('Supported Characters') + ' - ' + t('Sakamata Font Project')} />
         <html lang={language}></html>
-        <meta property='twitter:description' content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
-        <meta name="description" content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
+        <meta property='twitter:description' content={t("Sakamata Font supported character list")} />
+        <meta name="description" content={t("Sakamata Font supported character list")} />
         <meta property="og:image" content="/favicon.svg" />
         <meta property="twitter:image" content="/favicon.svg" />
         <meta name="twitter:card" content="summary" />

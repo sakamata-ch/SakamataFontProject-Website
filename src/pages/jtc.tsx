@@ -18,12 +18,12 @@ export default function Home() {
 
   return (
     <div>
-      <Helmet title={t('Japanese Traditional Calligraphy') + ' - ' + t('Sakamata Font Project')}>
-        <meta property="twitter:title" content={t('Japanese Traditional Calligraphy') + ' - ' + t('Sakamata Font Project')} />
-        <meta property="og:title" content={t('Japanese Traditional Calligraphy') + ' - ' + t('Sakamata Font Project')} />
+      <Helmet title={t('Japanese Traditional Calligraphy Font') + ' - ' + t('Sakamata Font Project')}>
+        <meta property="twitter:title" content={t('Japanese Traditional Calligraphy Font') + ' - ' + t('Sakamata Font Project')} />
+        <meta property="og:title" content={t('Japanese Traditional Calligraphy Font') + ' - ' + t('Sakamata Font Project')} />
         <html lang={language}></html>
-        <meta property='twitter:description' content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
-        <meta name="description" content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
+        <meta property='twitter:description' content={t("Sakamata Japanese Traditional Calligraphy Font Project will make computer font from Sakamata Chloe's cute hand write characters.")} />
+        <meta name="description" content={t("Sakamata Japanese Traditional Calligraphy Font Project will make computer font from Sakamata Chloe's cute hand write characters.")} />
         <meta property="og:image" content="/favicon.svg" />
         <meta property="twitter:image" content="/favicon.svg" />
         <meta name="twitter:card" content="summary" />
@@ -36,7 +36,7 @@ export default function Home() {
       <section className="p-strip--suru">
         <div className="row u-vertically-center">
           <div className="col-8">
-            <h1><Trans>Japanese Traditional Calligraphy</Trans></h1>
+            <h1><Trans>Sakamata</Trans> <Trans>Japanese Traditional Calligraphy Font</Trans></h1>
             <p><Trans>Computer font that seems Japanese traditional "shodō" style.</Trans></p>
           </div>
         </div>

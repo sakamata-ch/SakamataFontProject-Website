@@ -20,14 +20,20 @@
     "Try font now to check out Sakamata's cute hand write Characters.": "沙花叉のかわいい手書き文字を今すぐ確認しましょう。",
     "This project working under Hololive Derivative Works Guidelines.": "このプロジェクトはホロライブ二次創作ガイドラインに準拠して実施されています。",
     "Sakamata Chloe": "沙花叉クロヱ",
+    "Sakamata": "沙花叉",
     "All Characters": "全ての文字",
     "characters supported now.": "文字のデータを現在収録しています。",
     "Source Contents": "元のコンテンツ",
     "Styles": "スタイル",
     "Standard Font": "標準書体",
     "Japanese Traditional Calligraphy": "書道書体",
+    "Japanese Traditional Calligraphy Font": "書道体フォント",
     "Computer font that seems Japanese traditional \"shodō\" style.": "日本の伝統的な「書道」風のコンピュータフォント。",
     "Tips for using font": "フォント利用のテクニック",
     "Check tips for using font": "フォント利用のテクニックを確認",
-    ".": "。"
+    ".": "。",
+    "Sakamata Japanese Traditional Calligraphy Font Project will make computer font from Sakamata Chloe's cute hand write characters.": "沙花叉書道風フォントは沙花叉クロヱが書いたかわいい書道文字をコンピュータに移植するプロジェクトです。",
+    "Sakamata Font Hiragana and Katakana support information": "沙花叉フォントのひらがな・カタカナ対応状況",
+    "Sakamata Font supported character list": "沙花叉フォント対応文字一覧",
+    "Sakamata Font number, alphabet, ASCII special character support information": "沙花叉フォントの数字・アルファベット・ASCII記号対応状況"
 }

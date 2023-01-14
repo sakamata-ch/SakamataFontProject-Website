@@ -10,18 +10,15 @@ import Helmet from 'react-helmet';
 
 export default function Home() {
   const { t } = useTranslation();
-  const { language, siteUrl } = useI18next();
-
-  const [textInput, setTextInput] = useState<string>(t('Sakamata Chloe'));
 
   return (
     <div>
       <Helmet title={t('Tips for using font') + ' - ' + t('Sakamata Font Project')}>
         <meta property="twitter:title" content={t('Tips for using font') + ' - ' + t('Sakamata Font Project')} />
         <meta property="og:title" content={t('Tips for using font') + ' - ' + t('Sakamata Font Project')} />
-        <html lang={language}></html>
-        <meta property='twitter:description' content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
-        <meta name="description" content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
+        <html lang="ja"></html>
+        <meta property='twitter:description' content="沙花叉フォントに存在しない文字の効率的な代替方法や、よりバランスの良い表記に変更するテクニック、かわいらしさを引き出す方法について説明します。" />
+        <meta name="description" content="沙花叉フォントに存在しない文字の効率的な代替方法や、よりバランスの良い表記に変更するテクニック、かわいらしさを引き出す方法について説明します。" />
         <meta property="og:image" content="/favicon.svg" />
         <meta property="twitter:image" content="/favicon.svg" />
         <meta name="twitter:card" content="summary" />
