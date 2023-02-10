@@ -21,7 +21,7 @@
     "bootstrap-icons": "^1.9.1",
     "gatsby": "^4.18.1",
     "gatsby-plugin-clarity": "^1.0.1",
-    "gatsby-plugin-google-analytics": "^4.18.0",
+    "gatsby-plugin-google-gtag": "^4.25.0",
     "gatsby-plugin-manifest": "^4.18.1",
     "gatsby-plugin-pnpm": "^1.2.10",
     "gatsby-plugin-react-helmet": "^5.18.0",
