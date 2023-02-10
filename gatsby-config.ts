@@ -11,9 +11,9 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: ["gatsby-plugin-sass", {
-    resolve: 'gatsby-plugin-google-analytics',
+    resolve: 'gatsby-plugin-google-gtag',
     options: {
-      "trackingId": "G-04XE89SE0Y"
+      "trackingIds": ["G-04XE89SE0Y"]
     }
   }, "gatsby-plugin-sitemap", "gatsby-plugin-sass", 'gatsby-plugin-pnpm', `gatsby-plugin-react-helmet`, {
       resolve: 'gatsby-plugin-manifest',
