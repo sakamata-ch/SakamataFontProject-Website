@@ -1,6 +1,9 @@
 import { Navigation, Theme } from '@canonical/react-components'
 import { useTranslation, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
+import bootstrap from 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap-icons/font/bootstrap-icons.scss'
 
 export default function Nav(): JSX.Element {
@@ -9,39 +12,9 @@ export default function Nav(): JSX.Element {
   const { language } = useI18next();
 
   return (
-    <div>
+    <>
       <Navigation
         items={[
-          {
-            label: t('Supported Characters'),
-            items: [
-              {
-                label: t('Alphabet, Number, ASCII Character'),
-                url: `/${language}/ascii`
-              },
-              {
-                label: t('Hiragana, Katakana'),
-                url: `/${language}/hiragana-katakana`
-              },
-              {
-                label: t('All Characters'),
-                url: `/${language}/all-chars`
-              }
-            ]
-          },
-          {
-            label: t('Downloads'),
-            items: [
-              {
-                label: t('Standard Font'),
-                url: 'https://github.com/sakamata-ch/SakamataFontProject/releases'
-              },
-              {
-                label: t('Japanese Traditional Calligraphy'),
-                url: 'https://github.com/sakamata-ch/SakamataTraditionalCalligraphyFont/releases'
-              }
-            ]
-          },
           {
             label: t('Styles'),
             items: [
@@ -60,7 +33,7 @@ export default function Nav(): JSX.Element {
             items: [
               {
                 label: '日本語',
-                url: '/ja'
+                url: `/ja`
               },
               {
                 label: 'English',
@@ -76,6 +49,6 @@ export default function Nav(): JSX.Element {
         }}
         theme={Theme.DARK}
       />
-    </div>
+    </>
   )
 }

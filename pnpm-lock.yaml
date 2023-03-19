@@ -15,6 +15,7 @@ specifiers:
   '@types/react': ^18.0.14
   '@types/react-dom': ^18.0.5
   babel-eslint: ^10.1.0
+  bootstrap: 5.3.0-alpha1
   bootstrap-icons: ^1.9.1
   gatsby: ^4.18.1
   gatsby-plugin-clarity: ^1.0.1
@@ -40,6 +41,7 @@ specifiers:
 dependencies:
   '@canonical/react-components': 0.38.0_azuhgu7uo4wrnyxqw6nj4ifgvm
   babel-eslint: 10.1.0
+  bootstrap: 5.3.0-alpha1
   bootstrap-icons: 1.9.1
   gatsby: 4.18.1_pm5kurjdydzrjvqn3d7jlcdghq
   gatsby-plugin-clarity: 1.0.1
@@ -4267,6 +4269,12 @@ packages:
 
   /bootstrap-icons/1.9.1:
     resolution: {integrity: sha512-d4ZkO30MIkAhQ2nNRJqKXJVEQorALGbLWTuRxyCTJF96lRIV6imcgMehWGJUiJMJhglN0o2tqLIeDnMdiQEE9g==}
+    dev: false
+
+  /bootstrap/5.3.0-alpha1:
+    resolution: {integrity: sha512-ABZpKK4ObS3kKlIqH+ZVDqoy5t/bhFG0oHTAzByUdon7YIom0lpCeTqRniDzJmbtcWkNe800VVPBiJgxSYTYew==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
     dev: false
 
   /boxen/4.2.0:

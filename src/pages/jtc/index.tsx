@@ -1,14 +1,15 @@
 
 import { Card, Row, Col, Strip } from '@canonical/react-components'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
 import React, { useEffect, useState } from 'react';
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
-import '../styles/vanilla.scss';
-import '../styles/sakamata-font.scss';
-import '../styles/sakamata-font-preview.scss';
+import '../../styles/vanilla.scss';
+import '../../styles/sakamata-font.scss';
+import '../../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
+import NavJtc from '../../components/NavJtc';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -32,10 +33,11 @@ export default function Home() {
       </Helmet>
 
       <Nav />
+      <NavJtc />
 
       <section className="p-strip--suru">
         <div className="row u-vertically-center">
-          <div className="col-8">
+          <div className="col-12">
             <h1><Trans>Sakamata</Trans> <Trans>Japanese Traditional Calligraphy Font</Trans></h1>
             <p><Trans>Computer font that seems Japanese traditional "shodō" style.</Trans></p>
           </div>
