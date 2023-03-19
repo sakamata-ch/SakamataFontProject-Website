@@ -1,7 +1,6 @@
 import * as React from "react"
+import { Navigation, Theme } from '@canonical/react-components'
 import { Link } from "gatsby"
-import Nav from "../components/Nav"
-import NavStd from "../components/NavStd"
 import '../styles/sakamata-font-preview.scss'
 import '../styles/sakamata-font.scss'
 
@@ -9,8 +8,29 @@ import '../styles/sakamata-font.scss'
 const NotFoundPage = () => {
   return (
     <>
-      <Nav />
-      <NavStd />
+      <Navigation
+        items={[
+          {
+            label: 'Languages',
+            items: [
+              {
+                label: '日本語',
+                url: `/ja`
+              },
+              {
+                label: 'English',
+                url: '/en'
+              }
+            ]
+          }
+        ]}
+        logo={{
+          src: "/あ.svg",
+          title: 'Sakamata Font Project',
+          url: '/'
+        }}
+        theme={Theme.DARK}
+      />
 
       <section className="p-strip">
         <div className="row">
