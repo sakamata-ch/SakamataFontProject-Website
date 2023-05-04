@@ -1,9 +1,7 @@
 import { Navigation, Theme } from '@canonical/react-components'
 import { useTranslation, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
-import bootstrap from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'bootstrap-icons/font/bootstrap-icons.scss'
 
 export default function Nav(): JSX.Element {
