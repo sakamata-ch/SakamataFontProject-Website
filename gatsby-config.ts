@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     options: {
       "trackingIds": ["G-04XE89SE0Y"]
     }
-  }, "gatsby-plugin-sitemap", "gatsby-plugin-sass", 'gatsby-plugin-pnpm', `gatsby-plugin-react-helmet`, {
+  }, "gatsby-plugin-sitemap", `gatsby-plugin-react-helmet`, {
       resolve: 'gatsby-plugin-manifest',
       options: {
         "icon": "src/images/icon.png"
