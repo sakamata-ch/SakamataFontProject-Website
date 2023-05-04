@@ -7,6 +7,7 @@ import '../styles/sakamata-font.scss';
 import '../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
+import NavStd from '../components/NavStd';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -27,10 +28,11 @@ export default function Home() {
       </Helmet>
 
       <Nav />
+      <NavStd />
 
       <section className="p-strip--suru-topped">
         <div className="row u-vertically-center">
-          <div className="col-8">
+          <div className="col-12">
             <h1><Trans>Sakamata Font Project</Trans></h1>
             <p><Trans>Tips for using font</Trans></p>
           </div>

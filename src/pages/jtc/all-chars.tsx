@@ -1,15 +1,14 @@
 import { Card, Row, Col, Strip } from '@canonical/react-components'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
 import { useEffect, useState } from 'react';
-import SupportTable from '../components/SupportTable';
 import React from 'react';
-import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
-import '../styles/vanilla.scss';
-import '../styles/sakamata-font-preview.scss';
+import { Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
+import '../../styles/vanilla.scss';
+import '../../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
-import NavStd from '../components/NavStd';
+import NavJtc from '../../components/NavJtc';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -17,7 +16,7 @@ export default function Home() {
   const [chars, setChars] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch('https://07b8f021-4a5b-4903-bb58-1f3e540a4eb6.contentdelivernet.com/font.sakamata.ch/std/sakamata-font-char.tsv').then(res => res.text()).then(data => {
+    fetch('https://07b8f021-4a5b-4903-bb58-1f3e540a4eb6.contentdelivernet.com/font.sakamata.ch/jtc/sakamata-jtc-font-char.tsv').then(res => res.text()).then(data => {
       let chars: string[] = [];
 
       String(data).split('\n').forEach(function (l: string) {
@@ -32,9 +31,9 @@ export default function Home() {
 
   return (
     <div>
-      <Helmet title={t('Supported Characters') + ' - ' + t('Sakamata Font Project')}>
-        <meta property="twitter:title" content={t('Supported Characters') + ' - ' + t('Sakamata Font Project')} />
-        <meta property="og:title" content={t('Supported Characters') + ' - ' + t('Sakamata Font Project')} />
+      <Helmet title={t('Supported Characters') + ' - ' + t('Sakamata Japanese Traditional Calligraphy Font')}>
+        <meta property="twitter:title" content={t('Supported Characters') + ' - ' + t('Sakamata Japanese Traditional Calligraphy Font')} />
+        <meta property="og:title" content={t('Supported Characters') + ' - ' + t('Sakamata Japanese Traditional Calligraphy Font')} />
         <html lang={language}></html>
         <meta property='twitter:description' content={t("Sakamata Font supported character list")} />
         <meta name="description" content={t("Sakamata Font supported character list")} />
@@ -42,16 +41,17 @@ export default function Home() {
         <meta property="twitter:image" content="/favicon.svg" />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content={t('Sakamata Font Project')} />
+        <meta property="og:site_name" content={t('Sakamata Japanese Traditional Calligraphy Font')} />
       </Helmet>
 
       <Nav />
-      <NavStd />
+      <NavJtc />
 
       <section className="p-strip--suru-topped">
         <div className="row u-vertically-center">
           <div className="col-12">
-            <h1><Trans>Supported Characters</Trans></h1>
+            <h1><Trans>Sakamata Japanese Traditional Calligraphy Font</Trans></h1>
+            <h2><Trans>Supported Characters</Trans></h2>
             <p>{chars.length} <Trans>characters supported now.</Trans></p>
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function Home() {
               <li className="p-matrix__item" key={i} id={'U+' + (i.charCodeAt(0).toString(16))}>
                 <div className="p-matrix__img char-list-preview-holder">
                   <div>
-                    <span className="font-sakamata-apply char-list-preview">{i}</span>
+                    <span className="font-jtc-sakamata-apply char-list-preview">{i}</span>
                   </div>
                 </div>
                 <div className="p-matrix__content">

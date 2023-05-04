@@ -1,5 +1,6 @@
 import { Card, Row, Col, Strip } from '@canonical/react-components'
 import Nav from '../components/Nav'
+import NavStd from '../components/NavStd'
 import Footer from '../components/Footer'
 import React, { useEffect, useState } from 'react';
 import { Link, Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
@@ -31,10 +32,11 @@ export default function Home() {
       </Helmet>
 
       <Nav />
+      <NavStd />
 
       <section className="p-strip--suru">
         <div className="row u-vertically-center">
-          <div className="col-8">
+          <div className="col-12">
             <h1><Trans>Sakamata Font Project</Trans></h1>
             <p><Trans>Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.</Trans></p>
             <p><Trans>In personal purpose, you can use anywhere that accept custom ttf.</Trans></p>

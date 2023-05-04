@@ -1,53 +1,59 @@
 import * as React from "react"
+import { Navigation, Theme } from '@canonical/react-components'
 import { Link } from "gatsby"
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import '../styles/sakamata-font-preview.scss'
+import '../styles/sakamata-font.scss'
 
 // markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <>
+      <Navigation
+        items={[
+          {
+            label: 'Languages',
+            items: [
+              {
+                label: '日本語',
+                url: `/ja`
+              },
+              {
+                label: 'English',
+                url: '/en'
+              }
+            ]
+          }
+        ]}
+        logo={{
+          src: "/あ.svg",
+          title: 'Sakamata Font Project',
+          url: '/'
+        }}
+        theme={Theme.DARK}
+      />
+
+      <section className="p-strip">
+        <div className="row">
+          <div className="col-6 col-medium-3 u-vertically-center u-align--center">
+            <div>
+              <img src="/404-orca.png" alt="404 Orca" width="480" height="480" />
+              <p>
+                <small>
+                  Photo by <a href="https://unsplash.com/@t_lipke">Thomas Lipke</a> on <a href="https://unsplash.com/photos/p5nDU-d3Y0s">Unsplash</a>
+                </small>
+              </p>
+            </div>
+          </div>
+          <div className="col-6 col-medium-3 u-vertically-center">
+            <div>
+              <h1><span className="font-sakamata-apply">OPPS!</span> Something went wrong.</h1>
+              <p className="p-heading--4">The requested page was not found.</p>
+              <Link to="/">Back home</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
