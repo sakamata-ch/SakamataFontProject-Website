@@ -41,7 +41,7 @@
     "i18next": "^22.0.6",
     "mitt": "^3.0.0",
     "node-html-parser": "*",
-    "node-sass": "^8.0.0",
+    "node-sass": "^9.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": ">=18.0.0 <19.0.0",
