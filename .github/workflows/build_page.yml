@@ -2,6 +2,7 @@ name: Webwriter
 
 on:
   push:
+  pull_request:
 
 jobs:
   ##### ===========================
@@ -208,6 +209,7 @@ jobs:
 
   ##### ===========================
   deploy:
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs:
       - build-webfont
