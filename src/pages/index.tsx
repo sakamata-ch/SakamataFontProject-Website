@@ -38,7 +38,7 @@ export default function Home() {
         <div className="row u-vertically-center">
           <div className="col-12">
             <h1><Trans>Sakamata Font Project</Trans></h1>
-            <p><Trans>Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.</Trans></p>
+            <p><Trans>Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on your computer.</Trans></p>
             <p><Trans>In personal purpose, you can use anywhere that accept custom ttf.</Trans></p>
             <Link to="/index-sf" role="button" className="p-button--positive">
               <Trans>Check example</Trans>
