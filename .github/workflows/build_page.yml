@@ -45,6 +45,69 @@ jobs:
             SakamataFontProject/builder/build/sakamata-font-0-nostrict.sources.tsv
 
   ##### ===========================
+  build-jtc:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: SakamataTraditionalCalligraphyFont/builder/build
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      # ToDo: Use official butil-ttf action
+      #
+      #- name: Build
+      #  uses: ./SakamataFontProject/.github/actions/build-ttf
+      #  with:
+      #    weight: 0
+      #    strict: nostrict
+
+      - name: Install depends
+        run: ./_install_reqs_ubuntu.sh
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Run build
+        run: dotnet run -- --rawdir ../../raw --weight 0 nostrict --filename sakamata-jtc-font-0-nostrict --fontname "Sakamata Chloe Font"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sakamata-jtc-font-0-nostrict
+          path: |
+            SakamataFontProject/builder/build/sakamata-jtc-font-0-nostrict.ttf
+            SakamataFontProject/builder/build/sakamata-jtc-font-0-nostrict.sources.tsv
+
+  ##### ===========================
+  gen-chart-jtc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Run chart-generator
+        working-directory: SakamataTraditionalCalligraphyFont/builder/chart-generator
+        run: |
+          dotnet run --rawdir ../../raw
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-charts-jtc
+          path: SakamataTraditionalCalligraphyFont/builder/chart-generator/output/*
+
+  ##### ===========================
   gen-chart:
     runs-on: ubuntu-latest
     steps:
@@ -84,8 +147,18 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
+          name: sakamata-jtc-font-0-nostrict
+          path: fonts
+
+      - uses: actions/download-artifact@v4
+        with:
           name: generated-charts
           path: ~/artifact/chart
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: generated-charts-jtc
+          path: ~/artifact/chart-jtc
 
       - name: Install woff2
         run: sudo apt-get install -y woff2
@@ -93,6 +166,7 @@ jobs:
       - name: Compress to woff2
         run: |
           woff2_compress fonts/sakamata-font-0-nostrict.ttf
+          woff2_compress fonts-jtc/sakamata-jtc-font-0-nostrict.ttf
 
       - uses: actions/upload-artifact@v4
         with:
@@ -105,6 +179,7 @@ jobs:
           cp fonts/*.woff2 static/fonts/
           cp fonts/*.sources.tsv static/fonts/
           cp ~/artifact/chart/char.tsv static/fonts/sakamata-font-char.tsv
+          cp ~/artifact/chart-jtc/char.tsv static/fonts/sakamata-jtc-font-char.tsv
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

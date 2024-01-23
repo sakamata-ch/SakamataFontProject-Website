@@ -1,3 +1,6 @@
 [submodule "SakamataFontProject"]
 	path = SakamataFontProject
 	url = https://github.com/sakamata-ch/SakamataFontProject.git
+[submodule "SakamataTraditionalCalligraphyFont"]
+	path = SakamataTraditionalCalligraphyFont
+	url = https://github.com/sakamata-ch/SakamataTraditionalCalligraphyFont.git
