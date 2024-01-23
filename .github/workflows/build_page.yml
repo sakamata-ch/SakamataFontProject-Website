@@ -168,7 +168,7 @@ jobs:
       - name: Compress to woff2
         run: |
           woff2_compress fonts/sakamata-font-0-nostrict.ttf
-          woff2_compress fonts-jtc/sakamata-jtc-font-0-nostrict.ttf
+          woff2_compress fonts/sakamata-jtc-font-0-nostrict.ttf
 
       - uses: actions/upload-artifact@v4
         with:
