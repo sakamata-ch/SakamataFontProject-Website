@@ -41,8 +41,8 @@ jobs:
         with:
           name: sakamata-font-0-nostrict
           path: |
-            SakamataFontProject/builder/build/workdir/sakamata-font-0-nostrict.ttf
-            SakamataFontProject/builder/build/workdir/sakamata-font-0-nostrict.sources.tsv
+            SakamataFontProject/builder/build/sakamata-font-0-nostrict.ttf
+            SakamataFontProject/builder/build/sakamata-font-0-nostrict.sources.tsv
 
   ##### ===========================
   gen-chart:
