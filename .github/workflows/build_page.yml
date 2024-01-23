@@ -226,15 +226,9 @@ jobs:
           name: webwriter
           path: public
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Getting branch name
+        id: branch_name
+        run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
@@ -243,4 +237,5 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: sakamatafontproject
           directory: public
+          branch: ${{ steps.branch_name.outputs.short_ref }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
