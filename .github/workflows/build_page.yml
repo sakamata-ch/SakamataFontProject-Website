@@ -1,0 +1,104 @@
+name: Webwriter
+
+on:
+  push:
+
+jobs:
+  ##### ===========================
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Build
+        uses: ./SakamataFontProject/.github/actions/build-ttf
+        with:
+          weight: 0
+          strict: nostrict
+
+  ##### ===========================
+  gen-chart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Run chart-generator
+        working-directory: SakamataFontProject/builder/chart-generator
+        run: |
+          dotnet run --rawdir ../../raw
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-charts
+          path: SakamataFontProject/builder/chart-generator/output/*
+
+  ##### ===========================
+  build-webfont:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+      - gen-chart
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: sakamata-font-0-nostrict
+          path: fonts
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: generated-charts
+          path: ~/artifact/chart
+
+      - name: Install woff2
+        run: sudo apt-get install -y woff2
+
+      - name: Compress to woff2
+        run: |
+          woff2_compress fonts/sakamata-font-0-nostrict.ttf
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: webfont
+          path: fonts/*.woff2
+
+      - name: Copy data to gatsby builds
+        run: |
+          mkdir static/fonts
+          cp fonts/*.woff2 static/fonts/
+          cp fonts/*.sources.tsv static/fonts/
+          cp ~/artifact/chart/char.tsv static/fonts/sakamata-font-char.tsv
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+         
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+          run_install: false
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: webwriter
+          path: public
