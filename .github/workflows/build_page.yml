@@ -8,16 +8,41 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        shell: bash
+        working-directory: SakamataFontProject/builder/build
+
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: 'recursive'
 
-      - name: Build
-        uses: ./SakamataFontProject/.github/actions/build-ttf
+      # ToDo: Use official butil-ttf action
+      #
+      #- name: Build
+      #  uses: ./SakamataFontProject/.github/actions/build-ttf
+      #  with:
+      #    weight: 0
+      #    strict: nostrict
+
+      - name: Install depends
+        run: ./_install_reqs_ubuntu.sh
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
         with:
-          weight: 0
-          strict: nostrict
+          dotnet-version: 6.0.x
+
+      - name: Run build
+        run: dotnet run -- --rawdir ../../raw --weight 0 nostrict --filename sakamata-font-0-nostrict --fontname "Sakamata Chloe Font"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sakamata-font-0-nostrict
+          path: |
+            SakamataFontProject/builder/build/output/sakamata-font-0-nostrict.ttf
+            SakamataFontProject/builder/build/output/sakamata-font-0-nostrict.sources.tsv
 
   ##### ===========================
   gen-chart:
