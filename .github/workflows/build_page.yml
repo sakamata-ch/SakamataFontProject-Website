@@ -217,12 +217,24 @@ jobs:
     permissions:
       contents: read
       deployments: write
+      pages: write
+      id-token: write
 
     steps:
       - uses: actions/download-artifact@v4
         with:
           name: webwriter
           path: public
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
