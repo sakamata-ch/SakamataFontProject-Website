@@ -81,31 +81,8 @@ jobs:
         with:
           name: sakamata-jtc-font-0-nostrict
           path: |
-            SakamataFontProject/builder/build/sakamata-jtc-font-0-nostrict.ttf
-            SakamataFontProject/builder/build/sakamata-jtc-font-0-nostrict.sources.tsv
-
-  ##### ===========================
-  gen-chart-jtc:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: 'recursive'
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 6.0.x
-
-      - name: Run chart-generator
-        working-directory: SakamataTraditionalCalligraphyFont/builder/chart-generator
-        run: |
-          dotnet run --rawdir ../../raw
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: generated-charts-jtc
-          path: SakamataTraditionalCalligraphyFont/builder/chart-generator/output/*
+            SakamataTraditionalCalligraphyFont/builder/build/sakamata-jtc-font-0-nostrict.ttf
+            SakamataTraditionalCalligraphyFont/builder/build/sakamata-jtc-font-0-nostrict.sources.tsv
 
   ##### ===========================
   gen-chart:
@@ -129,6 +106,29 @@ jobs:
         with:
           name: generated-charts
           path: SakamataFontProject/builder/chart-generator/output/*
+
+  ##### ===========================
+  gen-chart-jtc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'recursive'
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Run chart-generator
+        working-directory: SakamataTraditionalCalligraphyFont/builder/chart-generator
+        run: |
+          dotnet run --rawdir ../../raw
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: generated-charts-jtc
+          path: SakamataTraditionalCalligraphyFont/builder/chart-generator/output/*
 
   ##### ===========================
   build-webfont:
