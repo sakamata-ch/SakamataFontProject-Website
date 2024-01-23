@@ -136,6 +136,8 @@ jobs:
     needs:
       - build
       - gen-chart
+      - build-jtc
+      - gen-chart-jtc
 
     steps:
       - uses: actions/checkout@v4
