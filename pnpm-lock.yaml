@@ -33,8 +33,8 @@ dependencies:
     specifier: ^5.13.3
     version: 5.13.3(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
   gatsby-core-utils:
-    specifier: ^4.13.0
-    version: 4.13.0
+    specifier: ^4.13.1
+    version: 4.13.1
   gatsby-link:
     specifier: ^5.13.0
     version: 5.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
@@ -6426,28 +6426,6 @@ packages:
       - supports-color
     dev: false
 
-  /gatsby-core-utils@4.13.0:
-    resolution: {integrity: sha512-+oJJsADfcEnzpQpof+L5qtP4iSeMaEPn1QSjXENlg/go9Pi/4eqb+Nn3y3q8bC/zy4hMWFWrPdMJmdW581uNvA==}
-    engines: {node: '>=18.0.0'}
-    dependencies:
-      '@babel/runtime': 7.23.8
-      ci-info: 2.0.0
-      configstore: 5.0.1
-      fastq: 1.16.0
-      file-type: 16.5.4
-      fs-extra: 11.2.0
-      got: 11.8.6
-      hash-wasm: 4.11.0
-      import-from: 4.0.0
-      lmdb: 2.5.3
-      lock: 1.1.0
-      node-object-hash: 2.3.10
-      proper-lockfile: 4.1.2
-      resolve-from: 5.0.0
-      tmp: 0.2.1
-      xdg-basedir: 4.0.0
-    dev: false
-
   /gatsby-core-utils@4.13.1:
     resolution: {integrity: sha512-w7G6SsQr8T2q+AJ1MxvRNGocCt+wjc22MiRLj2Zi3Ijpjszbr818JxwI4+aPt8WOSHlKT5SYCHICnEvcYPm9gg==}
     engines: {node: '>=18.0.0'}
@@ -6522,7 +6500,7 @@ packages:
       bluebird: 3.7.2
       chokidar: 3.5.3
       fs-exists-cached: 1.0.0
-      gatsby-core-utils: 4.13.0
+      gatsby-core-utils: 4.13.1
       glob: 7.2.3
       lodash: 4.17.21
       micromatch: 4.0.5
@@ -6593,7 +6571,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.8
       gatsby: 5.13.3(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-      gatsby-core-utils: 4.13.0
+      gatsby-core-utils: 4.13.1
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.3)(graphql@16.8.1)
       semver: 7.5.4
       sharp: 0.32.6
@@ -6720,7 +6698,7 @@ packages:
       fastq: 1.16.0
       fs-extra: 11.2.0
       gatsby: 5.13.3(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-      gatsby-core-utils: 4.13.0
+      gatsby-core-utils: 4.13.1
       gatsby-sharp: 1.13.0
       graphql: 16.8.1
       graphql-compose: 9.0.10(graphql@16.8.1)
@@ -6795,7 +6773,7 @@ packages:
       file-type: 16.5.4
       fs-extra: 11.2.0
       gatsby: 5.13.3(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-      gatsby-core-utils: 4.13.0
+      gatsby-core-utils: 4.13.1
       mime: 3.0.0
       pretty-bytes: 5.6.0
       valid-url: 1.0.9
