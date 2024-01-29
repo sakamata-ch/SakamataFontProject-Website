@@ -54,8 +54,8 @@ dependencies:
     specifier: ^3.0.1
     version: 3.0.1(gatsby@5.13.3)(i18next@23.8.1)(react-i18next@14.0.1)(react@18.2.0)
   gatsby-plugin-sass:
-    specifier: ^6.13.0
-    version: 6.13.0(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.0)
+    specifier: ^6.13.1
+    version: 6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.0)
   gatsby-plugin-sitemap:
     specifier: ^6.13.1
     version: 6.13.1(gatsby@5.13.3)(react-dom@18.2.0)(react@18.2.0)
@@ -6656,8 +6656,8 @@ packages:
       react-i18next: 14.0.1(i18next@23.8.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /gatsby-plugin-sass@6.13.0(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.0):
-    resolution: {integrity: sha512-AgOJsLeqpgaJUt6gTLrM28yg67jV0KPD3z27zGtSjL8KTFO4DLYDc8Ldd91vU6onk91mmiJsBy84Cy3fs3/6Ng==}
+  /gatsby-plugin-sass@6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.0):
+    resolution: {integrity: sha512-pHS1hJhOPMEaC1eLsuXgqskLBUxbpYR1lUb7yxL4jva0PX2HOQTYTczFYtueOWz/7RD0GjrDCHIWOzUIGauRsQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       gatsby: ^5.0.0-next
