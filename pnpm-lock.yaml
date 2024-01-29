@@ -36,8 +36,8 @@ dependencies:
     specifier: ^4.13.0
     version: 4.13.0
   gatsby-link:
-    specifier: ^5.13.0
-    version: 5.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^5.13.1
+    version: 5.13.1(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
   gatsby-plugin-clarity:
     specifier: ^1.0.1
     version: 1.0.1
@@ -6670,22 +6670,6 @@ packages:
       core-js-compat: 3.31.0
     dev: false
 
-  /gatsby-link@5.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-3qgJXL9DGOjW6lp2WRtJUyJ2y+kPA7tp3fKGZVJJ2RFz2vVWajuOtH20pp9LMyJZESxX7ACDnwRd15nRGjifQw==}
-    engines: {node: '>=18.0.0'}
-    peerDependencies:
-      '@gatsbyjs/reach-router': ^2.0.0
-      react: ^18.0.0 || ^0.0.0
-      react-dom: ^18.0.0 || ^0.0.0
-    dependencies:
-      '@gatsbyjs/reach-router': 2.0.1(react-dom@18.2.0)(react@18.2.0)
-      '@types/reach__router': 1.3.15
-      gatsby-page-utils: 3.13.0
-      prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
   /gatsby-link@5.13.1(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-naQxvgX/rd4Pj5ICL2DcqT30TAENk6wHttcLioxIqW9/UhwAXGkM9QsOJOyUmwbrp37UIKU3K92Ks/cMbRxwXA==}
     engines: {node: '>=18.0.0'}
@@ -6700,20 +6684,6 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /gatsby-page-utils@3.13.0:
-    resolution: {integrity: sha512-DZZlktfTne3b4OIJ84K+Or618ZK8wWBbqVXyClhzg8OXSF/8qbPD/eJug39ieEOlVe8mZ5k3QzCA2VZ3uK9zDg==}
-    engines: {node: '>=18.0.0'}
-    dependencies:
-      '@babel/runtime': 7.23.8
-      bluebird: 3.7.2
-      chokidar: 3.5.3
-      fs-exists-cached: 1.0.0
-      gatsby-core-utils: 4.13.0
-      glob: 7.2.3
-      lodash: 4.17.21
-      micromatch: 4.0.5
     dev: false
 
   /gatsby-page-utils@3.13.1:
@@ -6908,7 +6878,7 @@ packages:
       fastq: 1.16.0
       fs-extra: 11.2.0
       gatsby: 5.13.3(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
-      gatsby-core-utils: 4.13.0
+      gatsby-core-utils: 4.13.1
       gatsby-sharp: 1.13.0
       graphql: 16.8.1
       graphql-compose: 9.0.10(graphql@16.8.1)
