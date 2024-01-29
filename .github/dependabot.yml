@@ -11,6 +11,16 @@ updates:
       interval: "weekly"
     assignees:
       - "mkaraki"
+    groups:
+      gatsby:
+        patterns:
+          - "gatsby-*"
+      ts-types:
+        patterns:
+          - "@types/*"
+      all-npm:
+        patterns:
+          - "*"
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
