@@ -57,8 +57,8 @@ dependencies:
     specifier: ^6.13.0
     version: 6.13.0(gatsby@5.13.1)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.0)
   gatsby-plugin-sitemap:
-    specifier: ^6.13.0
-    version: 6.13.0(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^6.13.1
+    version: 6.13.1(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0)
   gatsby-react-router-scroll:
     specifier: ^6.13.1
     version: 6.13.1(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
@@ -6622,8 +6622,8 @@ packages:
       - webpack
     dev: false
 
-  /gatsby-plugin-sitemap@6.13.0(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-j3zjgIz7aCZ0ukq0NB2xGKV2CtMMyBviYHlD1u0djstelvu9+pbsGTQKf/UpiLv0/ez9rRrFs0YhPQV2aFzx6g==}
+  /gatsby-plugin-sitemap@6.13.1(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PuBcCjpwVj7NVW/GXFgmP2NLhM5FsFV618pVGCWnLSr0cPrtJsmPtLze1PMaq148EGUGnnctl/+7VLozheQ/CA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       gatsby: ^5.0.0-next
@@ -7079,7 +7079,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.8
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: false
