@@ -24,7 +24,7 @@
     "bootstrap-icons": "^1.11.3",
     "deepmerge": "^4.3.1",
     "eslint": "^8.56.0",
-    "gatsby": "^5.13.1",
+    "gatsby": "^5.13.3",
     "gatsby-core-utils": "^4.13.0",
     "gatsby-link": "^5.13.0",
     "gatsby-plugin-clarity": "^1.0.1",
