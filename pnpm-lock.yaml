@@ -48,8 +48,8 @@ dependencies:
     specifier: ^5.13.0
     version: 5.13.0(gatsby@5.13.1)(graphql@16.8.1)
   gatsby-plugin-react-helmet:
-    specifier: ^6.13.0
-    version: 6.13.0(gatsby@5.13.1)(react-helmet@6.1.0)
+    specifier: ^6.13.1
+    version: 6.13.1(gatsby@5.13.1)(react-helmet@6.1.0)
   gatsby-plugin-react-i18next:
     specifier: ^3.0.1
     version: 3.0.1(gatsby@5.13.1)(i18next@23.8.1)(react-i18next@14.0.1)(react@18.2.0)
@@ -6574,8 +6574,8 @@ packages:
       - supports-color
     dev: false
 
-  /gatsby-plugin-react-helmet@6.13.0(gatsby@5.13.1)(react-helmet@6.1.0):
-    resolution: {integrity: sha512-CNfCL1T5oICy2zfLAjxaQvXshtvj9/M76xbAMJaVwfV7HRmfy346NUemvNMKBJALUk4ncyQ0fJL63GNoj4ZFGw==}
+  /gatsby-plugin-react-helmet@6.13.1(gatsby@5.13.1)(react-helmet@6.1.0):
+    resolution: {integrity: sha512-Fwgf2UDOo1LQgw1vUmGmDMK5hXVrIXDR92URzu4DylQWgyfycfQ3D9FdU2JZ8jB6F3OI6Yx6YHC7zL3OAL7iOw==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       gatsby: ^5.0.0-next
