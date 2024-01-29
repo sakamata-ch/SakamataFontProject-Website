@@ -34,7 +34,7 @@
     "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-sass": "^6.13.0",
     "gatsby-plugin-sitemap": "^6.13.0",
-    "gatsby-react-router-scroll": "^6.13.0",
+    "gatsby-react-router-scroll": "^6.13.1",
     "gatsby-script": "^2.13.0",
     "gatsby-source-filesystem": "^5.13.0",
     "graphql": "^16.8.1",

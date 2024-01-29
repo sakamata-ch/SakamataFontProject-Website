@@ -60,8 +60,8 @@ dependencies:
     specifier: ^6.13.0
     version: 6.13.0(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0)
   gatsby-react-router-scroll:
-    specifier: ^6.13.0
-    version: 6.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^6.13.1
+    version: 6.13.1(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
   gatsby-script:
     specifier: ^2.13.0
     version: 2.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
@@ -6677,8 +6677,8 @@ packages:
       mime: 3.0.0
     dev: false
 
-  /gatsby-react-router-scroll@6.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Sgw4jHL4bMGXVR+ygb/IRr509DAMxKuwZ/ewoBWsdd0l7fTrYiExqAtszcGIq4PT0/3XeljImRtH7BZGIpDsxQ==}
+  /gatsby-react-router-scroll@6.13.1(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-srBpg/ZHW4miwH/4OWOcspHqr8ZmKLE4DBNvckt0KO4giJerWiGoLj6qePwLFRWZPfV7txJr2kuUzACxarpL5g==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       '@gatsbyjs/reach-router': ^2.0.0
@@ -6863,7 +6863,7 @@ packages:
       gatsby-plugin-page-creator: 5.13.0(gatsby@5.13.1)(graphql@16.8.1)
       gatsby-plugin-typescript: 5.13.0(gatsby@5.13.1)
       gatsby-plugin-utils: 4.13.0(gatsby@5.13.1)(graphql@16.8.1)
-      gatsby-react-router-scroll: 6.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
+      gatsby-react-router-scroll: 6.13.1(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
       gatsby-script: 2.13.0(@gatsbyjs/reach-router@2.0.1)(react-dom@18.2.0)(react@18.2.0)
       gatsby-telemetry: 4.13.0
       gatsby-worker: 2.13.0
