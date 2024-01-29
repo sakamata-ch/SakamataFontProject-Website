@@ -38,7 +38,7 @@
     "gatsby-script": "^2.13.0",
     "gatsby-source-filesystem": "^5.13.0",
     "graphql": "^16.8.1",
-    "i18next": "^23.7.18",
+    "i18next": "^23.8.1",
     "mitt": "^3.0.1",
     "node-html-parser": "^6.1.12",
     "node-sass": "^9.0.0",
