@@ -42,8 +42,8 @@ dependencies:
     specifier: ^1.0.1
     version: 1.0.1
   gatsby-plugin-google-gtag:
-    specifier: ^5.13.0
-    version: 5.13.0(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^5.13.1
+    version: 5.13.1(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0)
   gatsby-plugin-manifest:
     specifier: ^5.13.0
     version: 5.13.0(gatsby@5.13.1)(graphql@16.8.1)
@@ -6518,8 +6518,8 @@ packages:
       '@babel/runtime': 7.23.8
     dev: false
 
-  /gatsby-plugin-google-gtag@5.13.0(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-UPC/wET8T6ZdNjpQrz43EnRUQ2WjTX5E7HT3kfwshcYSjtGyBo4RxDdY6lnnmG8gQxmsUL86cvzqQt0ojs2xAQ==}
+  /gatsby-plugin-google-gtag@5.13.1(gatsby@5.13.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-aaJKIDwUWwhooJnalse1uvcusBmCwCVK33pp1IrDU02E7IohMen3eR5TsjLbfKO7Z+SbfKJEqUoi/r0ozrJarA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       gatsby: ^5.0.0-next
