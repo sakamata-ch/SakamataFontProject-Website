@@ -19,31 +19,14 @@ jobs:
         with:
           submodules: 'recursive'
 
-      # ToDo: Use official butil-ttf action
-      #
-      #- name: Build
-      #  uses: ./SakamataFontProject/.github/actions/build-ttf
-      #  with:
-      #    weight: 0
-      #    strict: nostrict
-
-      - name: Install depends
-        run: ./_install_reqs_ubuntu.sh
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - name: Build
+        uses: mkaraki/Png2Font/builder-ghaction@baed33b4a8b7d02516b900e87d5a07e6cb5ac27f
         with:
-          dotnet-version: 6.0.x
-
-      - name: Run build
-        run: dotnet run -- --rawdir ../../raw --weight 0 nostrict --filename sakamata-font-0-nostrict --fontname "Sakamata Chloe Font"
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sakamata-font-0-nostrict
-          path: |
-            SakamataFontProject/builder/build/sakamata-font-0-nostrict.ttf
-            SakamataFontProject/builder/build/sakamata-font-0-nostrict.sources.tsv
+          filename-prefix: sakamata-font
+          fontname: Sakamata Font
+          weight: 0
+          strict: nostrict
+          raw-directory: SakamataFontProject/raw
 
   ##### ===========================
   build-jtc:
@@ -59,31 +42,14 @@ jobs:
         with:
           submodules: 'recursive'
 
-      # ToDo: Use official butil-ttf action
-      #
-      #- name: Build
-      #  uses: ./SakamataFontProject/.github/actions/build-ttf
-      #  with:
-      #    weight: 0
-      #    strict: nostrict
-
-      - name: Install depends
-        run: ./_install_reqs_ubuntu.sh
-
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - name: Build
+        uses: mkaraki/Png2Font/builder-ghaction@baed33b4a8b7d02516b900e87d5a07e6cb5ac27f
         with:
-          dotnet-version: 6.0.x
-
-      - name: Run build
-        run: dotnet run -- --rawdir ../../raw --weight 0 nostrict --filename sakamata-jtc-font-0-nostrict --fontname "Sakamata Chloe Font"
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sakamata-jtc-font-0-nostrict
-          path: |
-            SakamataTraditionalCalligraphyFont/builder/build/sakamata-jtc-font-0-nostrict.ttf
-            SakamataTraditionalCalligraphyFont/builder/build/sakamata-jtc-font-0-nostrict.sources.tsv
+          filename-prefix: sakamata-jtc-font
+          fontname: Sakamata Japanese Traditional Calligraphy Font
+          weight: 0
+          strict: nostrict
+          raw-directory: SakamataTraditionalCalligraphyFont/raw
 
   ##### ===========================
   gen-chart:
@@ -93,20 +59,11 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 6.0.x
-
       - name: Run chart-generator
-        working-directory: SakamataFontProject/builder/chart-generator
-        run: |
-          dotnet run --rawdir ../../raw
-
-      - uses: actions/upload-artifact@v4
+        uses: mkaraki/Png2Font/chart-generator-ghaction@7cfdef916f5f168e1b9986779405275f5713e6c4
         with:
-          name: generated-charts
-          path: SakamataFontProject/builder/chart-generator/output/*
+          raw-directory: SakamataFontProject/raw
+          upload-name: generated-charts
 
   ##### ===========================
   gen-chart-jtc:
@@ -116,20 +73,11 @@ jobs:
         with:
           submodules: 'recursive'
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 6.0.x
-
       - name: Run chart-generator
-        working-directory: SakamataTraditionalCalligraphyFont/builder/chart-generator
-        run: |
-          dotnet run --rawdir ../../raw
-
-      - uses: actions/upload-artifact@v4
+        uses: mkaraki/Png2Font/chart-generator-ghaction@7cfdef916f5f168e1b9986779405275f5713e6c4
         with:
-          name: generated-charts-jtc
-          path: SakamataTraditionalCalligraphyFont/builder/chart-generator/output/*
+          raw-directory: SakamataTraditionalCalligraphyFont/raw
+          upload-name: generated-charts-jtc
 
   ##### ===========================
   build-webfont:
