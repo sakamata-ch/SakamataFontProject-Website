@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@canonical/react-components':
-    specifier: ^0.50.0
-    version: 0.50.0(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.7.0)
+    specifier: ^0.50.2
+    version: 0.50.2(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.7.0)
   '@gatsbyjs/reach-router':
     specifier: ^2.0.1
     version: 2.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -52,7 +52,7 @@ dependencies:
     version: 6.13.1(gatsby@5.13.3)(react-helmet@6.1.0)
   gatsby-plugin-react-i18next:
     specifier: ^3.0.1
-    version: 3.0.1(gatsby@5.13.3)(i18next@23.8.2)(react-i18next@14.0.3)(react@18.2.0)
+    version: 3.0.1(gatsby@5.13.3)(i18next@23.8.2)(react-i18next@14.0.5)(react@18.2.0)
   gatsby-plugin-sass:
     specifier: ^6.13.1
     version: 6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.1)
@@ -96,8 +96,8 @@ dependencies:
     specifier: ^6.1.0
     version: 6.1.0(react@18.2.0)
   react-i18next:
-    specifier: ^14.0.3
-    version: 14.0.3(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^14.0.5
+    version: 14.0.5(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
   sass:
     specifier: ^1.70.0
     version: 1.70.0
@@ -1614,8 +1614,8 @@ packages:
     hasBin: true
     dev: false
 
-  /@canonical/react-components@0.50.0(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.7.0):
-    resolution: {integrity: sha512-ZA//breBTO/S3DVaDRmPtTvp1rJCgcMAuwBDg6gJ6nTcS/Jc6zC8egeeiMPgGPH9R0VRrogpSY20Urzyx5wFfw==}
+  /@canonical/react-components@0.50.2(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.7.0):
+    resolution: {integrity: sha512-pqJ5HbmGQoEs1yTqzeORJ9PWiVCoA3V7Iu1FLyIuZ+2EVk+6H2lai/y++1NgguBU2QLO4P4jbJzbfM0e0mJaKg==}
     peerDependencies:
       '@types/react': ^17.0.2 || ^18.0.0
       '@types/react-dom': ^17.0.2 || ^18.0.0
@@ -1908,7 +1908,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       graphql: 16.8.1
-      tslib: 2.6.2
+      tslib: 2.4.1
     dev: false
 
   /@graphql-tools/relay-operation-optimizer@6.5.18(graphql@16.8.1):
@@ -1919,7 +1919,7 @@ packages:
       '@ardatan/relay-compiler': 12.0.0(graphql@16.8.1)
       '@graphql-tools/utils': 9.2.1(graphql@16.8.1)
       graphql: 16.8.1
-      tslib: 2.6.2
+      tslib: 2.4.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -6798,7 +6798,7 @@ packages:
       react-helmet: 6.1.0(react@18.2.0)
     dev: false
 
-  /gatsby-plugin-react-i18next@3.0.1(gatsby@5.13.3)(i18next@23.8.2)(react-i18next@14.0.3)(react@18.2.0):
+  /gatsby-plugin-react-i18next@3.0.1(gatsby@5.13.3)(i18next@23.8.2)(react-i18next@14.0.5)(react@18.2.0):
     resolution: {integrity: sha512-lN7ybB433iPHorQH9fP7HT0slEvll3NM9FjOXeWXJ+Bjizvy8XLU0pZ3D5/vyFjCp1JHAaulWnMcQS5XMgl1hw==}
     peerDependencies:
       gatsby: ^5.2.0
@@ -6813,7 +6813,7 @@ packages:
       outdent: 0.8.0
       path-to-regexp: 6.2.1
       react: 18.2.0
-      react-i18next: 14.0.3(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.0.5(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /gatsby-plugin-sass@6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.70.0)(webpack@5.90.1):
@@ -10483,8 +10483,8 @@ packages:
       react-side-effect: 2.1.2(react@18.2.0)
     dev: false
 
-  /react-i18next@14.0.3(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Zav2EEnrQNmCawnzj0l7xitj7jipC7kBNG3o6Cl75NwGndvdp/wu3LSVwJpyAc3eSWMwRFYZ5uNi43CtFUDf/g==}
+  /react-i18next@14.0.5(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-5+bQSeEtgJrMBABBL5lO7jPdSNAbeAZ+MlFWDw//7FnVacuVu3l9EeWFzBQvZsKy+cihkbThWOAThEdH8YjGEw==}
     peerDependencies:
       i18next: '>= 23.2.3'
       react: '>= 16.8.0'
