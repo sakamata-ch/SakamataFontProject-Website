@@ -20,7 +20,7 @@ jobs:
           submodules: 'recursive'
 
       - name: Build
-        uses: mkaraki/Png2Font/builder-ghaction@baed33b4a8b7d02516b900e87d5a07e6cb5ac27f
+        uses: mkaraki/Png2Font/builder-ghaction@b5777cc1432e1e02a6e57c02d500bdde73c45306
         with:
           filename-prefix: sakamata-font
           fontname: Sakamata Font
@@ -43,7 +43,7 @@ jobs:
           submodules: 'recursive'
 
       - name: Build
-        uses: mkaraki/Png2Font/builder-ghaction@baed33b4a8b7d02516b900e87d5a07e6cb5ac27f
+        uses: mkaraki/Png2Font/builder-ghaction@b5777cc1432e1e02a6e57c02d500bdde73c45306
         with:
           filename-prefix: sakamata-jtc-font
           fontname: Sakamata Japanese Traditional Calligraphy Font
@@ -60,7 +60,7 @@ jobs:
           submodules: 'recursive'
 
       - name: Run chart-generator
-        uses: mkaraki/Png2Font/chart-generator-ghaction@7cfdef916f5f168e1b9986779405275f5713e6c4
+        uses: mkaraki/Png2Font/chart-generator-ghaction@b5777cc1432e1e02a6e57c02d500bdde73c45306
         with:
           raw-directory: SakamataFontProject/raw
           upload-name: generated-charts
@@ -74,7 +74,7 @@ jobs:
           submodules: 'recursive'
 
       - name: Run chart-generator
-        uses: mkaraki/Png2Font/chart-generator-ghaction@7cfdef916f5f168e1b9986779405275f5713e6c4
+        uses: mkaraki/Png2Font/chart-generator-ghaction@b5777cc1432e1e02a6e57c02d500bdde73c45306
         with:
           raw-directory: SakamataTraditionalCalligraphyFont/raw
           upload-name: generated-charts-jtc
