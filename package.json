@@ -38,7 +38,7 @@
     "gatsby-script": "^2.13.0",
     "gatsby-source-filesystem": "^5.13.1",
     "graphql": "^16.8.1",
-    "i18next": "^23.8.2",
+    "i18next": "^23.9.0",
     "mitt": "^3.0.1",
     "node-html-parser": "^6.1.12",
     "node-sass": "^9.0.0",
@@ -47,12 +47,12 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^14.0.5",
-    "sass": "^1.70.0",
+    "sass": "^1.71.0",
     "shallow-compare": "^1.2.2",
     "style-to-object": "^1.0.5",
     "typescript": "^5.3.3",
-    "vanilla-framework": "^4.7.0",
-    "webpack": "^5.90.1"
+    "vanilla-framework": "^4.8.0",
+    "webpack": "^5.90.3"
   },
   "devDependencies": {
     "@gatsbyjs/webpack-hot-middleware": "^2.25.3",
