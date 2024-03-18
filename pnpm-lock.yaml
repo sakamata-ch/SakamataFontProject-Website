@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@canonical/react-components':
     specifier: ^0.50.5
-    version: 0.50.5(@types/react-dom@18.2.22)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.8.0)
+    version: 0.50.5(@types/react-dom@18.2.22)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.9.0)
   '@gatsbyjs/reach-router':
     specifier: ^2.0.1
     version: 2.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -55,7 +55,7 @@ dependencies:
     version: 3.0.1(gatsby@5.13.3)(i18next@23.10.1)(react-i18next@14.1.0)(react@18.2.0)
   gatsby-plugin-sass:
     specifier: ^6.13.1
-    version: 6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.71.1)(webpack@5.90.3)
+    version: 6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.72.0)(webpack@5.90.3)
   gatsby-plugin-sitemap:
     specifier: ^6.13.1
     version: 6.13.1(gatsby@5.13.3)(react-dom@18.2.0)(react@18.2.0)
@@ -99,8 +99,8 @@ dependencies:
     specifier: ^14.1.0
     version: 14.1.0(i18next@23.10.1)(react-dom@18.2.0)(react@18.2.0)
   sass:
-    specifier: ^1.71.1
-    version: 1.71.1
+    specifier: ^1.72.0
+    version: 1.72.0
   shallow-compare:
     specifier: ^1.2.2
     version: 1.2.2
@@ -111,8 +111,8 @@ dependencies:
     specifier: ^5.4.2
     version: 5.4.2
   vanilla-framework:
-    specifier: ^4.8.0
-    version: 4.8.0
+    specifier: ^4.9.0
+    version: 4.9.0
   webpack:
     specifier: ^5.90.3
     version: 5.90.3
@@ -1621,7 +1621,7 @@ packages:
     hasBin: true
     dev: false
 
-  /@canonical/react-components@0.50.5(@types/react-dom@18.2.22)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.8.0):
+  /@canonical/react-components@0.50.5(@types/react-dom@18.2.22)(@types/react@18.2.66)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.9.0):
     resolution: {integrity: sha512-4XJsMsc+2dDeK2ZDlNaE/vz3j6+kfU8UEIZR2zvnsimUHzfnhPXABSy/n1BcbCn3H3AcqTY3sRMJn921ncAyPQ==}
     peerDependencies:
       '@types/react': ^17.0.2 || ^18.0.0
@@ -1643,7 +1643,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-table: 7.8.0(react@18.2.0)
       react-useportal: 1.0.19(react-dom@18.2.0)(react@18.2.0)
-      vanilla-framework: 4.8.0
+      vanilla-framework: 4.9.0
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -4131,8 +4131,8 @@ packages:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
     dev: false
 
-  /binary-extensions@2.2.0:
-    resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
+  /binary-extensions@2.3.0:
+    resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
     dev: false
 
@@ -6838,7 +6838,7 @@ packages:
       react-i18next: 14.1.0(i18next@23.10.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /gatsby-plugin-sass@6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.71.1)(webpack@5.90.3):
+  /gatsby-plugin-sass@6.13.1(gatsby@5.13.3)(node-sass@9.0.0)(sass@1.72.0)(webpack@5.90.3):
     resolution: {integrity: sha512-pHS1hJhOPMEaC1eLsuXgqskLBUxbpYR1lUb7yxL4jva0PX2HOQTYTczFYtueOWz/7RD0GjrDCHIWOzUIGauRsQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -6848,8 +6848,8 @@ packages:
       '@babel/runtime': 7.23.9
       gatsby: 5.13.3(babel-eslint@10.1.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.2)
       resolve-url-loader: 3.1.5
-      sass: 1.71.1
-      sass-loader: 10.5.2(node-sass@9.0.0)(sass@1.71.1)(webpack@5.90.3)
+      sass: 1.72.0
+      sass-loader: 10.5.2(node-sass@9.0.0)(sass@1.72.0)(webpack@5.90.3)
     transitivePeerDependencies:
       - fibers
       - node-sass
@@ -7891,7 +7891,7 @@ packages:
     resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
     engines: {node: '>=8'}
     dependencies:
-      binary-extensions: 2.2.0
+      binary-extensions: 2.3.0
     dev: false
 
   /is-boolean-object@1.1.2:
@@ -10191,7 +10191,7 @@ packages:
     dependencies:
       nanoid: 3.3.7
       picocolors: 1.0.0
-      source-map-js: 1.0.2
+      source-map-js: 1.1.0
     dev: false
 
   /prebuild-install@7.1.1:
@@ -10984,7 +10984,7 @@ packages:
       yargs: 17.7.2
     dev: false
 
-  /sass-loader@10.5.2(node-sass@9.0.0)(sass@1.71.1)(webpack@5.90.3):
+  /sass-loader@10.5.2(node-sass@9.0.0)(sass@1.72.0)(webpack@5.90.3):
     resolution: {integrity: sha512-vMUoSNOUKJILHpcNCCyD23X34gve1TS7Rjd9uXHeKqhvBG39x6XbswFDtpbTElj6XdMFezoWhkh5vtKudf2cgQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -11004,20 +11004,20 @@ packages:
       loader-utils: 2.0.4
       neo-async: 2.6.2
       node-sass: 9.0.0
-      sass: 1.71.1
+      sass: 1.72.0
       schema-utils: 3.3.0
       semver: 7.5.4
       webpack: 5.90.3
     dev: false
 
-  /sass@1.71.1:
-    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+  /sass@1.72.0:
+    resolution: {integrity: sha512-Gpczt3WA56Ly0Mn8Sl21Vj94s1axi9hDIzDFn9Ph9x3C3p4nNyvsqJoQyVXKou6cBlfFWEgRW4rT8Tb4i3XnVA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.6.0
       immutable: 4.3.5
-      source-map-js: 1.0.2
+      source-map-js: 1.1.0
     dev: false
 
   /sax@1.3.0:
@@ -11385,8 +11385,8 @@ packages:
     resolution: {integrity: sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==}
     dev: false
 
-  /source-map-js@1.0.2:
-    resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+  /source-map-js@1.1.0:
+    resolution: {integrity: sha512-9vC2SfsJzlej6MAaMPLu8HiBSHGdRAJ9hVFYN1ibZoNkeanmDmLUcIrj6G9DGL7XMJ54AKg/G75akXl1/izTOw==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -12328,8 +12328,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /vanilla-framework@4.8.0:
-    resolution: {integrity: sha512-EmyFjdl+50e+kH6ven7pF7q+qDOVIGODwjQiqCRWwrL8ynnRPaYOSZ4/lLjqNYmhNZ+U4YPSpqHhv36lTAUNuA==}
+  /vanilla-framework@4.9.0:
+    resolution: {integrity: sha512-iTmvqWlsX0ic69VZ1sR9NPQtYRR9+iM679HZCl7SDQhMQSsEeJEQ6Ejjen3JN5a7YxiYmeIhxaLlmC4rExRT1w==}
     dev: false
 
   /vary@1.1.2:
