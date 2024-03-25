@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@canonical/react-components": "^0.50.5",
+    "@canonical/react-components": "^0.51.0",
     "@gatsbyjs/reach-router": "^2.0.1",
     "@popperjs/core": "^2.11.8",
     "babel-eslint": "^10.1.0",
@@ -47,16 +47,16 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^14.1.0",
-    "sass": "^1.71.1",
+    "sass": "^1.72.0",
     "shallow-compare": "^1.2.2",
     "style-to-object": "^1.0.5",
-    "typescript": "^5.4.2",
-    "vanilla-framework": "^4.8.0",
-    "webpack": "^5.90.3"
+    "typescript": "^5.4.3",
+    "vanilla-framework": "^4.9.0",
+    "webpack": "^5.91.0"
   },
   "devDependencies": {
     "@gatsbyjs/webpack-hot-middleware": "^2.25.3",
-    "@types/node": "^20.11.28",
+    "@types/node": "^20.11.30",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "anser": "^2.1.1",
