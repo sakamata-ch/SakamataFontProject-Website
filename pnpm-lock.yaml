@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@canonical/react-components':
-    specifier: ^0.51.0
-    version: 0.51.0(@types/react-dom@18.2.22)(@types/react@18.2.72)(formik@2.4.5)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.9.0)
+    specifier: ^0.51.1
+    version: 0.51.1(@types/react-dom@18.2.22)(@types/react@18.2.72)(formik@2.4.5)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.9.1)
   '@gatsbyjs/reach-router':
     specifier: ^2.0.1
     version: 2.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -78,8 +78,8 @@ dependencies:
     specifier: ^3.0.1
     version: 3.0.1
   node-html-parser:
-    specifier: ^6.1.12
-    version: 6.1.12
+    specifier: ^6.1.13
+    version: 6.1.13
   node-sass:
     specifier: ^9.0.0
     version: 9.0.0
@@ -105,14 +105,14 @@ dependencies:
     specifier: ^1.2.2
     version: 1.2.2
   style-to-object:
-    specifier: ^1.0.5
-    version: 1.0.5
+    specifier: ^1.0.6
+    version: 1.0.6
   typescript:
     specifier: ^5.4.3
     version: 5.4.3
   vanilla-framework:
-    specifier: ^4.9.0
-    version: 4.9.0
+    specifier: ^4.9.1
+    version: 4.9.1
   webpack:
     specifier: ^5.91.0
     version: 5.91.0
@@ -203,7 +203,7 @@ packages:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/highlight': 7.23.4
+      '@babel/highlight': 7.24.2
       chalk: 2.4.2
     dev: false
 
@@ -490,15 +490,6 @@ packages:
       '@babel/types': 7.23.6
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /@babel/highlight@7.23.4:
-    resolution: {integrity: sha512-acGdbYSfp2WheJoJm/EBBBLh/ID8KDc64ISZ9DYtBmC8/Q204PZJLHyzeB5qMzJ5trcOkybd78M4x2KWsUq++A==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-validator-identifier': 7.22.20
-      chalk: 2.4.2
-      js-tokens: 4.0.0
     dev: false
 
   /@babel/highlight@7.24.2:
@@ -1639,8 +1630,8 @@ packages:
     hasBin: true
     dev: false
 
-  /@canonical/react-components@0.51.0(@types/react-dom@18.2.22)(@types/react@18.2.72)(formik@2.4.5)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.9.0):
-    resolution: {integrity: sha512-HKpTQxhMroqCtZGufDanxGRrrjIgcIZQ2akSkk0DwlO48aBOAG0ar/BRsStnI52I5fpNGagJ2F1k2lw/OTjsrg==}
+  /@canonical/react-components@0.51.1(@types/react-dom@18.2.22)(@types/react@18.2.72)(formik@2.4.5)(react-dom@18.2.0)(react@18.2.0)(vanilla-framework@4.9.1):
+    resolution: {integrity: sha512-05ywaCceGE4yDWdNThKO9fZKyDdUi+PxBHpLVsxsvO7wVDsIg6TP+pdB+YvbSMQgcEOghI1UbIL72WDeSkMNug==}
     peerDependencies:
       '@types/react': ^17.0.2 || ^18.0.0
       '@types/react-dom': ^17.0.2 || ^18.0.0
@@ -1663,7 +1654,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-table: 7.8.0(react@18.2.0)
       react-useportal: 1.0.19(react-dom@18.2.0)(react@18.2.0)
-      vanilla-framework: 4.9.0
+      vanilla-framework: 4.9.1
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -3076,7 +3067,7 @@ packages:
   /@types/hoist-non-react-statics@3.3.5:
     resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
     dependencies:
-      '@types/react': 18.2.72
+      '@types/react': 18.2.73
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -3212,6 +3203,13 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
+
+  /@types/react@18.2.73:
+    resolution: {integrity: sha512-XcGdod0Jjv84HOC7N5ziY3x+qL0AfmubvKOZ9hJjJ2yd5EE+KYjWhdOjt387e9HPheHkdggF9atTifMRtyAaRA==}
+    dependencies:
+      '@types/prop-types': 15.7.12
+      csstype: 3.1.3
+    dev: false
 
   /@types/responselike@1.0.3:
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -7863,8 +7861,8 @@ packages:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
     dev: false
 
-  /inline-style-parser@0.2.2:
-    resolution: {integrity: sha512-EcKzdTHVe8wFVOGEYXiW9WmJXPjqi1T+234YpJr98RiFYKHV3cdy1+3mkTE+KHTHxFFLH51SfaGOoUdW+v7ViQ==}
+  /inline-style-parser@0.2.3:
+    resolution: {integrity: sha512-qlD8YNDqyTKTyuITrDOffsl6Tdhv+UC4hcdAVuQsK4IMQ99nSgd1MIA/Q+jQYoh9r3hVUXhYh7urSRmXPkW04g==}
     dev: false
 
   /inquirer@7.3.3:
@@ -9351,8 +9349,8 @@ packages:
       he: 1.2.0
     dev: false
 
-  /node-html-parser@6.1.12:
-    resolution: {integrity: sha512-/bT/Ncmv+fbMGX96XG9g05vFt43m/+SYKIs9oAemQVYyVcZmDAI2Xq/SbNcpOA35eF0Zk2av3Ksf+Xk8Vt8abA==}
+  /node-html-parser@6.1.13:
+    resolution: {integrity: sha512-qIsTMOY4C/dAa5Q5vsobRpOOvPfC4pB61UVW2uSwZNUp0QU/jCekTal1vMmbO0DgdHeLUJpv/ARmDqErVxA3Sg==}
     dependencies:
       css-select: 5.1.0
       he: 1.2.0
@@ -11751,10 +11749,10 @@ packages:
       inline-style-parser: 0.1.1
     dev: false
 
-  /style-to-object@1.0.5:
-    resolution: {integrity: sha512-rDRwHtoDD3UMMrmZ6BzOW0naTjMsVZLIjsGleSKS/0Oz+cgCfAPRspaqJuE8rDzpKha/nEvnM0IF4seEAZUTKQ==}
+  /style-to-object@1.0.6:
+    resolution: {integrity: sha512-khxq+Qm3xEyZfKd/y9L3oIWQimxuc4STrQKtQn8aSDRHb8mFgpukgX1hdzfrMEW6JCjyJ8p89x+IUMVnCBI1PA==}
     dependencies:
-      inline-style-parser: 0.2.2
+      inline-style-parser: 0.2.3
     dev: false
 
   /stylehacks@5.1.1(postcss@8.4.33):
@@ -12405,8 +12403,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /vanilla-framework@4.9.0:
-    resolution: {integrity: sha512-iTmvqWlsX0ic69VZ1sR9NPQtYRR9+iM679HZCl7SDQhMQSsEeJEQ6Ejjen3JN5a7YxiYmeIhxaLlmC4rExRT1w==}
+  /vanilla-framework@4.9.1:
+    resolution: {integrity: sha512-nY/wzAF1obHTH6pePo9OLslnyOsybiCnyHbr6JkfWHlahsukaA/Wj78yz9VEw1yuPDZzzTfxzXK3Eu771N+fCA==}
     dev: false
 
   /vary@1.1.2:
