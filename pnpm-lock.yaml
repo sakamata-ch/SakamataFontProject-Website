@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@canonical/react-components':
-    specifier: ^0.52.0
-    version: 0.52.0(@types/react-dom@18.3.0)(@types/react@18.3.1)(formik@2.4.6)(react-dom@18.3.1)(react@18.3.1)(vanilla-framework@4.10.0)
+    specifier: ^0.53.0
+    version: 0.53.0(@types/react-dom@18.3.0)(@types/react@18.3.1)(formik@2.4.6)(react-dom@18.3.1)(react@18.3.1)(vanilla-framework@4.11.0)
   '@gatsbyjs/reach-router':
     specifier: ^2.0.1
     version: 2.0.1(react-dom@18.3.1)(react@18.3.1)
@@ -52,10 +52,10 @@ dependencies:
     version: 6.13.1(gatsby@5.13.4)(react-helmet@6.1.0)
   gatsby-plugin-react-i18next:
     specifier: ^3.0.1
-    version: 3.0.1(gatsby@5.13.4)(i18next@23.11.3)(react-i18next@14.1.1)(react@18.3.1)
+    version: 3.0.1(gatsby@5.13.4)(i18next@23.11.4)(react-i18next@14.1.1)(react@18.3.1)
   gatsby-plugin-sass:
     specifier: ^6.13.1
-    version: 6.13.1(gatsby@5.13.4)(node-sass@9.0.0)(sass@1.76.0)(webpack@5.91.0)
+    version: 6.13.1(gatsby@5.13.4)(node-sass@9.0.0)(sass@1.77.1)(webpack@5.91.0)
   gatsby-plugin-sitemap:
     specifier: ^6.13.1
     version: 6.13.1(gatsby@5.13.4)(react-dom@18.3.1)(react@18.3.1)
@@ -72,8 +72,8 @@ dependencies:
     specifier: ^16.8.1
     version: 16.8.1
   i18next:
-    specifier: ^23.11.3
-    version: 23.11.3
+    specifier: ^23.11.4
+    version: 23.11.4
   mitt:
     specifier: ^3.0.1
     version: 3.0.1
@@ -97,10 +97,10 @@ dependencies:
     version: 6.1.0(react@18.3.1)
   react-i18next:
     specifier: ^14.1.1
-    version: 14.1.1(i18next@23.11.3)(react-dom@18.3.1)(react@18.3.1)
+    version: 14.1.1(i18next@23.11.4)(react-dom@18.3.1)(react@18.3.1)
   sass:
-    specifier: ^1.76.0
-    version: 1.76.0
+    specifier: ^1.77.1
+    version: 1.77.1
   shallow-compare:
     specifier: ^1.2.2
     version: 1.2.2
@@ -111,8 +111,8 @@ dependencies:
     specifier: ^5.4.5
     version: 5.4.5
   vanilla-framework:
-    specifier: ^4.10.0
-    version: 4.10.0
+    specifier: ^4.11.0
+    version: 4.11.0
   webpack:
     specifier: ^5.91.0
     version: 5.91.0
@@ -1692,8 +1692,8 @@ packages:
     hasBin: true
     dev: false
 
-  /@canonical/react-components@0.52.0(@types/react-dom@18.3.0)(@types/react@18.3.1)(formik@2.4.6)(react-dom@18.3.1)(react@18.3.1)(vanilla-framework@4.10.0):
-    resolution: {integrity: sha512-LLGRQ5pbChh07YVubb2T937iLsUK/qPITjCw342lGqv5LhF95ihSpeFkyrHXAX7NpthLW8uHrjVASsA3FtzOgg==}
+  /@canonical/react-components@0.53.0(@types/react-dom@18.3.0)(@types/react@18.3.1)(formik@2.4.6)(react-dom@18.3.1)(react@18.3.1)(vanilla-framework@4.11.0):
+    resolution: {integrity: sha512-P5kbBi1iozZnxABDbZjtoMivVOgC63GZquCH9nF7TJW6qH2wXZxOhKQud+ZYAbQldLaNzz63vd2I13baVperhg==}
     peerDependencies:
       '@types/react': ^17.0.2 || ^18.0.0
       '@types/react-dom': ^17.0.2 || ^18.0.0
@@ -1702,11 +1702,11 @@ packages:
       react-dom: ^17.0.2 || ^18.0.0
       vanilla-framework: ^3.15.1 || ^4.0.0
     dependencies:
-      '@types/jest': 29.5.11
-      '@types/node': 20.8.5
+      '@types/jest': 29.5.12
+      '@types/node': 20.12.11
       '@types/react': 18.3.1
       '@types/react-dom': 18.3.0
-      '@types/react-table': 7.7.19
+      '@types/react-table': 7.7.20
       classnames: 2.5.1
       formik: 2.4.6(react@18.3.1)
       jest-environment-jsdom: 29.7.0
@@ -1716,7 +1716,7 @@ packages:
       react-dom: 18.3.1(react@18.3.1)
       react-table: 7.8.0(react@18.3.1)
       react-useportal: 1.0.19(react-dom@18.3.1)(react@18.3.1)
-      vanilla-framework: 4.10.0
+      vanilla-framework: 4.11.0
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -3125,7 +3125,7 @@ packages:
   /@types/hoist-non-react-statics@3.3.5:
     resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
     dependencies:
-      '@types/react': 18.3.1
+      '@types/react': 18.3.2
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -3155,8 +3155,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.3
     dev: false
 
-  /@types/jest@29.5.11:
-    resolution: {integrity: sha512-S2mHmYIVe13vrm6q4kN6fLYYAka15ALQki/vgDC3mIukEOx8WJlv0kQPM+d4w8Gp6u0uSdKND04IlTXBv0rwnQ==}
+  /@types/jest@29.5.12:
+    resolution: {integrity: sha512-eDC8bTvT/QhYdxJAulQikueigY5AsdBRH2yDKW3yveW7svY3+DzN84/2NUgkw10RTiJbWqZrTtoGVdYlvFJdLw==}
     dependencies:
       expect: 29.7.0
       pretty-format: 29.7.0
@@ -3218,10 +3218,10 @@ packages:
     dependencies:
       undici-types: 5.26.5
 
-  /@types/node@20.8.5:
-    resolution: {integrity: sha512-SPlobFgbidfIeOYlzXiEjSYeIJiOCthv+9tSQVpvk4PAdIIc+2SmjNVzWXk9t0Y7dl73Zdf+OgXKHX9XtkqUpw==}
+  /@types/node@20.12.11:
+    resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
     dependencies:
-      undici-types: 5.25.3
+      undici-types: 5.26.5
     dev: false
 
   /@types/node@8.10.66:
@@ -3250,8 +3250,8 @@ packages:
     dependencies:
       '@types/react': 18.3.1
 
-  /@types/react-table@7.7.19:
-    resolution: {integrity: sha512-47jMa1Pai7ily6BXJCW33IL5ghqmCWs2VM9s+h1D4mCaK5P4uNkZOW3RMMg8MCXBvAJ0v9+sPqKjhid0PaJPQA==}
+  /@types/react-table@7.7.20:
+    resolution: {integrity: sha512-ahMp4pmjVlnExxNwxyaDrFgmKxSbPwU23sGQw2gJK4EhCvnvmib2s/O/+y1dfV57dXOwpr2plfyBol+vEHbi2w==}
     dependencies:
       '@types/react': 18.3.1
     dev: false
@@ -3261,6 +3261,13 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
+
+  /@types/react@18.3.2:
+    resolution: {integrity: sha512-Btgg89dAnqD4vV7R3hlwOxgqobUQKgx3MmrQRi0yYbs/P0ym8XozIAlkqVilPqHQwXs4e9Tf63rrCgl58BcO4w==}
+    dependencies:
+      '@types/prop-types': 15.7.12
+      csstype: 3.1.3
+    dev: false
 
   /@types/responselike@1.0.3:
     resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
@@ -7063,7 +7070,7 @@ packages:
       react-helmet: 6.1.0(react@18.3.1)
     dev: false
 
-  /gatsby-plugin-react-i18next@3.0.1(gatsby@5.13.4)(i18next@23.11.3)(react-i18next@14.1.1)(react@18.3.1):
+  /gatsby-plugin-react-i18next@3.0.1(gatsby@5.13.4)(i18next@23.11.4)(react-i18next@14.1.1)(react@18.3.1):
     resolution: {integrity: sha512-lN7ybB433iPHorQH9fP7HT0slEvll3NM9FjOXeWXJ+Bjizvy8XLU0pZ3D5/vyFjCp1JHAaulWnMcQS5XMgl1hw==}
     peerDependencies:
       gatsby: ^5.2.0
@@ -7074,14 +7081,14 @@ packages:
       bluebird: 3.7.2
       browser-lang: 0.2.1
       gatsby: 5.13.4(babel-eslint@10.1.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
-      i18next: 23.11.3
+      i18next: 23.11.4
       outdent: 0.8.0
       path-to-regexp: 6.2.1
       react: 18.3.1
-      react-i18next: 14.1.1(i18next@23.11.3)(react-dom@18.3.1)(react@18.3.1)
+      react-i18next: 14.1.1(i18next@23.11.4)(react-dom@18.3.1)(react@18.3.1)
     dev: false
 
-  /gatsby-plugin-sass@6.13.1(gatsby@5.13.4)(node-sass@9.0.0)(sass@1.76.0)(webpack@5.91.0):
+  /gatsby-plugin-sass@6.13.1(gatsby@5.13.4)(node-sass@9.0.0)(sass@1.77.1)(webpack@5.91.0):
     resolution: {integrity: sha512-pHS1hJhOPMEaC1eLsuXgqskLBUxbpYR1lUb7yxL4jva0PX2HOQTYTczFYtueOWz/7RD0GjrDCHIWOzUIGauRsQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -7091,8 +7098,8 @@ packages:
       '@babel/runtime': 7.23.9
       gatsby: 5.13.4(babel-eslint@10.1.0)(react-dom@18.3.1)(react@18.3.1)(typescript@5.4.5)
       resolve-url-loader: 3.1.5
-      sass: 1.76.0
-      sass-loader: 10.5.2(node-sass@9.0.0)(sass@1.76.0)(webpack@5.91.0)
+      sass: 1.77.1
+      sass-loader: 10.5.2(node-sass@9.0.0)(sass@1.77.1)(webpack@5.91.0)
     transitivePeerDependencies:
       - fibers
       - node-sass
@@ -7964,8 +7971,8 @@ packages:
       ms: 2.1.3
     dev: false
 
-  /i18next@23.11.3:
-    resolution: {integrity: sha512-Pq/aSKowir7JM0rj+Wa23Kb6KKDUGno/HjG+wRQu0PxoTbpQ4N89MAT0rFGvXmLkRLNMb1BbBOKGozl01dabzg==}
+  /i18next@23.11.4:
+    resolution: {integrity: sha512-CCUjtd5TfaCl+mLUzAA0uPSN+AVn4fP/kWCYt/hocPUwusTpMVczdrRyOBUwk6N05iH40qiKx6q1DoNJtBIwdg==}
     dependencies:
       '@babel/runtime': 7.24.5
     dev: false
@@ -8017,8 +8024,8 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: false
 
-  /immutable@4.3.5:
-    resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==}
+  /immutable@4.3.6:
+    resolution: {integrity: sha512-Ju0+lEMyzMVZarkTn/gqRpdqd5dOPaz1mCZ0SH3JV6iFw81PldE/PEB1hWVEA288HPt4WXW8O7AWxB10M+03QQ==}
     dev: false
 
   /import-fresh@3.3.0:
@@ -8684,7 +8691,7 @@ packages:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-potential-custom-element-name: 1.0.1
-      nwsapi: 2.2.9
+      nwsapi: 2.2.10
       parse5: 7.1.2
       saxes: 6.0.0
       symbol-tree: 3.2.4
@@ -9711,8 +9718,8 @@ packages:
     resolution: {integrity: sha512-2vPPEi+Z7WqML2jZYddDIfy5Dqb0r2fze2zTxNNknZaFpVHU3mFB3R+DWeJWGVx0ecvttSGlJTI+WG+8Z4cDWw==}
     dev: false
 
-  /nwsapi@2.2.9:
-    resolution: {integrity: sha512-2f3F0SEEer8bBu0dsNCFF50N0cTThV1nWFYcEYFZttdW0lDAoybv9cQoK7X7/68Z89S7FoRrVjP1LPX4XRf9vg==}
+  /nwsapi@2.2.10:
+    resolution: {integrity: sha512-QK0sRs7MKv0tKe1+5uZIQk/C8XGza4DAnztJG8iD+TpJIORARrCxczA738awHrZoHeTjSSoHqao2teO0dC/gFQ==}
     dev: false
 
   /object-assign@4.1.1:
@@ -9968,7 +9975,7 @@ packages:
     resolution: {integrity: sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg==}
     engines: {node: '>=8'}
     dependencies:
-      '@babel/code-frame': 7.23.5
+      '@babel/code-frame': 7.24.2
       error-ex: 1.3.2
       json-parse-even-better-errors: 2.3.1
       lines-and-columns: 1.2.4
@@ -10800,7 +10807,7 @@ packages:
       react-side-effect: 2.1.2(react@18.3.1)
     dev: false
 
-  /react-i18next@14.1.1(i18next@23.11.3)(react-dom@18.3.1)(react@18.3.1):
+  /react-i18next@14.1.1(i18next@23.11.4)(react-dom@18.3.1)(react@18.3.1):
     resolution: {integrity: sha512-QSiKw+ihzJ/CIeIYWrarCmXJUySHDwQr5y8uaNIkbxoGRm/5DukkxZs+RPla79IKyyDPzC/DRlgQCABHtrQuQQ==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -10815,7 +10822,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.5
       html-parse-stringify: 3.0.1
-      i18next: 23.11.3
+      i18next: 23.11.4
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     dev: false
@@ -11283,7 +11290,7 @@ packages:
       yargs: 17.7.2
     dev: false
 
-  /sass-loader@10.5.2(node-sass@9.0.0)(sass@1.76.0)(webpack@5.91.0):
+  /sass-loader@10.5.2(node-sass@9.0.0)(sass@1.77.1)(webpack@5.91.0):
     resolution: {integrity: sha512-vMUoSNOUKJILHpcNCCyD23X34gve1TS7Rjd9uXHeKqhvBG39x6XbswFDtpbTElj6XdMFezoWhkh5vtKudf2cgQ==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -11303,19 +11310,19 @@ packages:
       loader-utils: 2.0.4
       neo-async: 2.6.2
       node-sass: 9.0.0
-      sass: 1.76.0
+      sass: 1.77.1
       schema-utils: 3.3.0
       semver: 7.5.4
       webpack: 5.91.0
     dev: false
 
-  /sass@1.76.0:
-    resolution: {integrity: sha512-nc3LeqvF2FNW5xGF1zxZifdW3ffIz5aBb7I7tSvOoNu7z1RQ6pFt9MBuiPtjgaI62YWrM/txjWlOCFiGtf2xpw==}
+  /sass@1.77.1:
+    resolution: {integrity: sha512-OMEyfirt9XEfyvocduUIOlUSkWOXS/LAt6oblR/ISXCTukyavjex+zQNm51pPCOiFKY1QpWvEH1EeCkgyV3I6w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.6.0
-      immutable: 4.3.5
+      immutable: 4.3.6
       source-map-js: 1.2.0
     dev: false
 
@@ -12466,10 +12473,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /undici-types@5.25.3:
-    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
-    dev: false
-
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
@@ -12662,8 +12665,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /vanilla-framework@4.10.0:
-    resolution: {integrity: sha512-mkf48XSjU11KxmikB63+vnHxncqyYEjl9ki5dCD/oL2AGdh53t2uHsh2z85jMyz8MMXcHlXo2/gWIsSQluS/Vg==}
+  /vanilla-framework@4.11.0:
+    resolution: {integrity: sha512-S0AAHNVphn3YJ7BQhyHmvKhrqiZcncQBPedwMan18uavB4VfAT8UN0dwgrHQvY/ypUuJiq/GPA0Xe1xcd+E7dg==}
     dev: false
 
   /vary@1.1.2:
