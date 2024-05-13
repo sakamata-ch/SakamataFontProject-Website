@@ -56,8 +56,8 @@
   },
   "devDependencies": {
     "@gatsbyjs/webpack-hot-middleware": "^2.25.3",
-    "@types/node": "^20.12.10",
-    "@types/react": "^18.3.1",
+    "@types/node": "^20.12.11",
+    "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "anser": "^2.1.1",
     "css.escape": "^1.5.1",
