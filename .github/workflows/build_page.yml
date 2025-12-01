@@ -91,22 +91,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           name: sakamata-font-0-nostrict
           path: fonts
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           name: sakamata-jtc-font-0-nostrict
           path: fonts
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           name: generated-charts
           path: ~/artifact/chart
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           name: generated-charts-jtc
           path: ~/artifact/chart-jtc
@@ -169,7 +169,7 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v6
         with:
           name: webwriter
           path: public
