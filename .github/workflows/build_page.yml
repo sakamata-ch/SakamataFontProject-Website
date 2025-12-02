@@ -119,7 +119,7 @@ jobs:
           woff2_compress fonts/sakamata-font-0-nostrict.ttf
           woff2_compress fonts/sakamata-jtc-font-0-nostrict.ttf
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: webfont
           path: fonts/*.woff2
@@ -149,7 +149,7 @@ jobs:
         run: pnpm run build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: webwriter
           path: public
