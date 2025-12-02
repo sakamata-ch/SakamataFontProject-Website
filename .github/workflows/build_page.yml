@@ -15,7 +15,7 @@ jobs:
         working-directory: SakamataFontProject/builder/build
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'recursive'
 
@@ -38,7 +38,7 @@ jobs:
         working-directory: SakamataTraditionalCalligraphyFont/builder/build
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'recursive'
 
@@ -55,7 +55,7 @@ jobs:
   gen-chart:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'recursive'
 
@@ -69,7 +69,7 @@ jobs:
   gen-chart-jtc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: 'recursive'
 
@@ -89,7 +89,7 @@ jobs:
       - gen-chart-jtc
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/download-artifact@v6
         with:
