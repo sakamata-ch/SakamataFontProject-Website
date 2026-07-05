@@ -2,6 +2,7 @@ import { useTranslation, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.scss'
+import {BASE_URL} from '../consts';
 
 export default function Nav(): JSX.Element {
 
@@ -12,7 +13,7 @@ export default function Nav(): JSX.Element {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div className="container-fluid">
-          <a className="navbar-brand text-white" href={`/${language}/jtc/`}><Trans>Japanese Traditional Calligraphy Font</Trans></a>
+          <a className="navbar-brand text-white" href={`${BASE_URL}/${language}/jtc/`}><Trans>Japanese Traditional Calligraphy Font</Trans></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -23,9 +24,9 @@ export default function Nav(): JSX.Element {
                   <Trans>Supported Characters</Trans>
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item text-light" href={`/${language}/jtc/ascii`}><Trans>Alphabet, Number, ASCII Character</Trans></a></li>
-                  <li><a className="dropdown-item text-light" href={`/${language}/jtc/hiragana-katakana`}><Trans>Hiragana, Katakana</Trans></a></li>
-                  <li><a className="dropdown-item text-light" href={`/${language}/jtc/all-chars`}><Trans>All Characters</Trans></a></li>
+                  <li><a className="dropdown-item text-light" href={`${BASE_URL}/${language}/jtc/ascii`}><Trans>Alphabet, Number, ASCII Character</Trans></a></li>
+                  <li><a className="dropdown-item text-light" href={`${BASE_URL}/${language}/jtc/hiragana-katakana`}><Trans>Hiragana, Katakana</Trans></a></li>
+                  <li><a className="dropdown-item text-light" href={`${BASE_URL}/${language}/jtc/all-chars`}><Trans>All Characters</Trans></a></li>
                 </ul>
               </li>
               <li className="nav-item">

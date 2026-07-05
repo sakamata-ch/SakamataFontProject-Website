@@ -1,9 +1,12 @@
 import type { GatsbyConfig } from "gatsby";
+import {BASE_URL, SITE_URL} from './src/consts';
+
 
 const config: GatsbyConfig = {
+  pathPrefix: BASE_URL,
   siteMetadata: {
     title: `Sakamata Font Project`,
-    siteUrl: `https://sakamata-ch.github.io/SakamataFontProject-Website/`,
+    siteUrl: SITE_URL,
     image: '/SakamataFontProject-Website/icon.png',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -36,7 +39,7 @@ const config: GatsbyConfig = {
         defaultLanguage: `ja`,
         fallbackLanguage: 'en',
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://font.sakamata.ch`,
+        siteUrl: SITE_URL,
         // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
         trailingSlash: 'always',
         redirect: false,
@@ -64,7 +67,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://sakamata-ch.github.io/SakamataFontProject-Website/`,
+        siteUrl: SITE_URL,
       },
     },
   ]

@@ -4,6 +4,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.scss'
 import aSvg from '../images/あ.svg';
+import {BASE_URL} from '../consts';
 
 export default function Nav(): JSX.Element {
 
@@ -19,11 +20,11 @@ export default function Nav(): JSX.Element {
             items: [
               {
                 label: t('Standard Font'),
-                url: `/${language}/`
+                url: `${BASE_URL}/${language}/`
               },
               {
                 label: t('Japanese Traditional Calligraphy'),
-                url: `/${language}/jtc`
+                url: `${BASE_URL}/${language}/jtc`
               }
             ]
           },
@@ -32,11 +33,11 @@ export default function Nav(): JSX.Element {
             items: [
               {
                 label: '日本語',
-                url: `/ja`
+                url: `${BASE_URL}/ja`
               },
               {
                 label: 'English',
-                url: '/en'
+                url: `${BASE_URL}/en`
               }
             ]
           }
@@ -44,7 +45,7 @@ export default function Nav(): JSX.Element {
         logo={{
           src: aSvg,
           title: t('Sakamata Font Project'),
-          url: `/${language}/`
+          url: `${BASE_URL}/${language}/`
         }}
         theme={Theme.DARK}
       />
