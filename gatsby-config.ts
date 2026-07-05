@@ -3,8 +3,8 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Sakamata Font Project`,
-    siteUrl: `https://font.sakamata.ch`,
-    image: '/icon.png',
+    siteUrl: `https://sakamata-ch.github.io/SakamataFontProject-Website/`,
+    image: '/SakamataFontProject-Website/icon.png',
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -60,7 +60,13 @@ const config: GatsbyConfig = {
         // false will enable clarity tracking code on production environment only
         enable_on_dev_env: true
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://sakamata-ch.github.io/SakamataFontProject-Website/`,
+      },
+    },
   ]
 };
 
