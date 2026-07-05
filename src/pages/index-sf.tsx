@@ -9,6 +9,7 @@ import '../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 import NavStd from '../components/NavStd';
+import OgImage from '../components/OgImage';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -24,8 +25,7 @@ export default function Home() {
         <meta property="og:title" content="さかまた ふぉんと ぷろじぇくと" />
         <meta property='twitter:description' content="実際に沙花叉フォントを使って沙花叉フォントプロジェクトのサイトを作ってみた例" />
         <meta name="description" content="実際に沙花叉フォントを使って沙花叉フォントプロジェクトのサイトを作ってみた例" />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="twitter:image" content="/favicon.svg" />
+        <OgImage />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="沙花叉フォントプロジェクト" />

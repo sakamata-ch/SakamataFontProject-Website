@@ -8,6 +8,7 @@ import '../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 import NavStd from '../components/NavStd';
+import OgImage from '../components/OgImage';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -20,8 +21,7 @@ export default function Home() {
         <html lang="ja"></html>
         <meta property='twitter:description' content="沙花叉フォントに存在しない文字の効率的な代替方法や、よりバランスの良い表記に変更するテクニック、かわいらしさを引き出す方法について説明します。" />
         <meta name="description" content="沙花叉フォントに存在しない文字の効率的な代替方法や、よりバランスの良い表記に変更するテクニック、かわいらしさを引き出す方法について説明します。" />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="twitter:image" content="/favicon.svg" />
+        <OgImage />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={t('Sakamata Font Project')} />

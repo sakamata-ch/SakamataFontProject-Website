@@ -9,6 +9,7 @@ import '../styles/sakamata-font.scss';
 import '../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
+import OgImage from '../components/OgImage';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -24,8 +25,7 @@ export default function Home() {
         <meta property="og:title" content={t('Sakamata Font Project')} />
         <meta property='twitter:description' content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
         <meta name="description" content={t("Sakamata Font Project makes easy to use Sakamata Chloe's cute hand write Characters on yout computer.")} />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="twitter:image" content="/favicon.svg" />
+        <OgImage />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={t('Sakamata Font Project')} />

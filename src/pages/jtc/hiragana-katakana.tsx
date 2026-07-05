@@ -10,6 +10,8 @@ import '../../styles/vanilla.scss';
 import '../../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
+import OgImage from '../../components/OgImage';
+import { SF_JTC_CHARS_URL } from '../../consts';
 
 const data: string[][][][] = [
   [
@@ -61,7 +63,7 @@ export default function Home() {
   const [chars, setChars] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch('/fonts/sakamata-jtc-font-char.tsv').then(res => res.text()).then(data => {
+    fetch(SF_JTC_CHARS_URL).then(res => res.text()).then(data => {
       let chars: string[] = [];
 
       String(data).split('\n').forEach(function (l: string) {
@@ -82,8 +84,7 @@ export default function Home() {
         <html lang={language}></html>
         <meta property='twitter:description' content={t("Sakamata Font Hiragana and Katakana support information")} />
         <meta name="description" content={t("Sakamata Font Hiragana and Katakana support information")} />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="twitter:image" content="/favicon.svg" />
+        <OgImage />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content={t('Sakamata Japanese Traditional Calligraphy Font')} />

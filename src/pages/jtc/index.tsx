@@ -10,6 +10,7 @@ import '../../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 import NavJtc from '../../components/NavJtc';
+import OgImage from '../../components/OgImage';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -25,8 +26,7 @@ export default function Home() {
         <html lang={language}></html>
         <meta property='twitter:description' content={t("Sakamata Japanese Traditional Calligraphy Font Project will make computer font from Sakamata Chloe's cute hand write characters.")} />
         <meta name="description" content={t("Sakamata Japanese Traditional Calligraphy Font Project will make computer font from Sakamata Chloe's cute hand write characters.")} />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="twitter:image" content="/favicon.svg" />
+        <OgImage />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content={t('Sakamata Font Project')} />

@@ -3,6 +3,7 @@ import { useTranslation, useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.scss'
+import aSvg from '../images/あ.svg';
 
 export default function Nav(): JSX.Element {
 
@@ -41,7 +42,7 @@ export default function Nav(): JSX.Element {
           }
         ]}
         logo={{
-          src: "/あ.svg",
+          src: aSvg,
           title: t('Sakamata Font Project'),
           url: `/${language}/`
         }}

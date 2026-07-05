@@ -10,6 +10,8 @@ import '../styles/sakamata-font-preview.scss';
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet';
 import NavStd from '../components/NavStd';
+import OgImage from '../components/OgImage';
+import { SF_CHARS_URL } from '../consts';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -17,7 +19,7 @@ export default function Home() {
   const [chars, setChars] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch('/fonts/sakamata-font-char.tsv').then(res => res.text()).then(data => {
+    fetch(SF_CHARS_URL).then(res => res.text()).then(data => {
       let chars: string[] = [];
 
       String(data).split('\n').forEach(function (l: string) {
@@ -38,8 +40,7 @@ export default function Home() {
         <html lang={language}></html>
         <meta property='twitter:description' content={t("Sakamata Font supported character list")} />
         <meta name="description" content={t("Sakamata Font supported character list")} />
-        <meta property="og:image" content="/favicon.svg" />
-        <meta property="twitter:image" content="/favicon.svg" />
+        <OgImage />
         <meta name="twitter:card" content="summary" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content={t('Sakamata Font Project')} />

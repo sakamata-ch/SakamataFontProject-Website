@@ -36,7 +36,7 @@ const NotFoundPage = () => {
         <div className="row">
           <div className="col-6 col-medium-3 u-vertically-center u-align--center">
             <div>
-              <img src="/404-orca.png" alt="404 Orca" width="480" height="480" />
+              <img src="/SakamataFontProject-Website/404-orca.png" alt="404 Orca" width="480" height="480" />
               <p>
                 <small>
                   Photo by <a href="https://unsplash.com/@t_lipke">Thomas Lipke</a> on <a href="https://unsplash.com/photos/p5nDU-d3Y0s">Unsplash</a>
